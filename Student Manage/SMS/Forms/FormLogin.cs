@@ -25,7 +25,7 @@ namespace Student_Manage.SMS.Forms
 
         private void labelFP_Click(object sender, EventArgs e)
         {
-            FormFP formFP = new FormFP();
+            FormForgotPassword formFP = new FormForgotPassword();
             formFP.ShowDialog();
         }
         
