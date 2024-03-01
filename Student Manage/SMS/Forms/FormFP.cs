@@ -54,7 +54,7 @@ namespace Student_Manage.SMS.Forms
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            Console.WriteLine("tho gay ");
         }
 
         private void textBoxEmail_Enter(object sender, EventArgs e)
