@@ -151,5 +151,10 @@ namespace Student_Manage.SMS.Forms
         {
             textBoxPassword.PasswordChar = '*';
         }
+
+        private void textBoxUserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

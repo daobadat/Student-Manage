@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Student Manage/SMS/UseControl/UsingControlDashBoard.cs
+/Student Manage/SMS/UseControl/UsingControlDashBoard.Designer.cs
+/Student Manage/SMS/UseControl/UsingControlDashBoard.resx

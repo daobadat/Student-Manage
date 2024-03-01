@@ -100,5 +100,10 @@ namespace Student_Manage.SMS.Forms
         {
             pictureBoxError.Hide();
         }
+
+        private void textBoxEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

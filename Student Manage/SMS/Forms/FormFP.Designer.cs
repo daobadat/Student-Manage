@@ -63,6 +63,7 @@
             this.textBoxEmail.Size = new System.Drawing.Size(281, 22);
             this.textBoxEmail.TabIndex = 8;
             this.textBoxEmail.Text = "daodat@email.com";
+            this.textBoxEmail.TextChanged += new System.EventHandler(this.textBoxEmail_TextChanged);
             this.textBoxEmail.Enter += new System.EventHandler(this.textBoxEmail_Enter);
             this.textBoxEmail.Leave += new System.EventHandler(this.textBoxEmail_Leave);
             // 
@@ -105,7 +106,6 @@
             this.pictureBoxError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxError.TabIndex = 10;
             this.pictureBoxError.TabStop = false;
-           // this.pictureBoxError.Click += new System.EventHandler(this.pictureBoxError_Click);
             this.pictureBoxError.MouseHover += new System.EventHandler(this.pictureBoxError_MouseHover);
             // 
             // panel1

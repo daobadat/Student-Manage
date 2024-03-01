@@ -79,6 +79,12 @@
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="SMS\Forms\toolTip.cs" />
+    <Compile Include="SMS\UseControl\UsingControlDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMS\UseControl\UsingControlDashBoard.Designer.cs">
+      <DependentUpon>UsingControlDashBoard.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -94,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SMS\Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMS\UseControl\UsingControlDashBoard.resx">
+      <DependentUpon>UsingControlDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -125,6 +134,9 @@
     <None Include="Resources\complete %282%29.png" />
     <None Include="Resources\complete %283%29.png" />
     <None Include="Resources\complete %284%29.png" />
+    <None Include="Resources\1654193.png" />
+    <None Include="Resources\9051433.png" />
+    <None Include="Resources\6596902.png" />
     <Content Include="TextTemplate.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
