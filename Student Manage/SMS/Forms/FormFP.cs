@@ -26,5 +26,10 @@ namespace Student_Manage.SMS.Forms
         {
             Close();
         }
+
+        private void pictureBoxError_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
