@@ -47,11 +47,6 @@ namespace Student_Manage.SMS.Forms
             Close();
         }
 
-        private void pictureBoxError_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void pictureBoxClose_MouseMove(object sender, MouseEventArgs e)
         {
             toolTip1.SetToolTip(pictureBoxClose, "Close");
