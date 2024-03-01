@@ -29,7 +29,7 @@ namespace Student_Manage.SMS.Forms
 
         private void pictureBoxError_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("tho gay ");
         }
     }
 }
