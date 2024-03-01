@@ -105,7 +105,7 @@
             this.pictureBoxError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxError.TabIndex = 10;
             this.pictureBoxError.TabStop = false;
-            this.pictureBoxError.Click += new System.EventHandler(this.pictureBoxError_Click);
+           // this.pictureBoxError.Click += new System.EventHandler(this.pictureBoxError_Click);
             this.pictureBoxError.MouseHover += new System.EventHandler(this.pictureBoxError_MouseHover);
             // 
             // panel1
