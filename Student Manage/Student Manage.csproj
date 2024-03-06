@@ -60,6 +60,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMS\FormsUseControl\UserControlAddClass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SMS\FormsUseControl\UserControlAddClass.Designer.cs">
+      <DependentUpon>UserControlAddClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="SMS\FormsUseControl\UserControlDashBoard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -95,6 +101,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SMS\FormsUseControl\UserControlAddClass.resx">
+      <DependentUpon>UserControlAddClass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SMS\FormsUseControl\UserControlDashBoard.resx">
       <DependentUpon>UserControlDashBoard.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +146,7 @@
     <None Include="Resources\1654193.png" />
     <None Include="Resources\9051433.png" />
     <None Include="Resources\6596902.png" />
+    <None Include="Resources\5948534.png" />
     <Content Include="TextTemplate.ico" />
   </ItemGroup>
   <ItemGroup />

@@ -103,6 +103,16 @@ namespace Student_Manage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5948534 {
+            get {
+                object obj = ResourceManager.GetObject("5948534", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _6596902 {
             get {
                 object obj = ResourceManager.GetObject("6596902", resourceCulture);
