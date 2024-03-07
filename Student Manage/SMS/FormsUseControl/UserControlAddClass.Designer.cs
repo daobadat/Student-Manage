@@ -47,7 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPageSearchClass = new System.Windows.Forms.TabPage();
-            this.label9 = new System.Windows.Forms.Label();
+            this.labelCountClass = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridViewClass = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,19 +60,20 @@
             this.textBoxSearchClass = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.tabPageUPClass = new System.Windows.Forms.TabPage();
+            this.tabPageUPClassAndDelete = new System.Windows.Forms.TabPage();
+            this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUPClass = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxHMStudent1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxNu1 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxNam1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxName1 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.TabControlAddClass.SuspendLayout();
@@ -80,7 +81,7 @@
             this.tabPageSearchClass.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).BeginInit();
-            this.tabPageUPClass.SuspendLayout();
+            this.tabPageUPClassAndDelete.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabControlAddClass
@@ -88,12 +89,15 @@
             this.TabControlAddClass.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.TabControlAddClass.Controls.Add(this.tabPageAddClass);
             this.TabControlAddClass.Controls.Add(this.tabPageSearchClass);
-            this.TabControlAddClass.Controls.Add(this.tabPageUPClass);
-            this.TabControlAddClass.Location = new System.Drawing.Point(3, 3);
+            this.TabControlAddClass.Controls.Add(this.tabPageUPClassAndDelete);
+            this.TabControlAddClass.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabControlAddClass.Location = new System.Drawing.Point(0, 0);
             this.TabControlAddClass.Name = "TabControlAddClass";
             this.TabControlAddClass.SelectedIndex = 0;
-            this.TabControlAddClass.Size = new System.Drawing.Size(975, 578);
+            this.TabControlAddClass.Size = new System.Drawing.Size(981, 596);
             this.TabControlAddClass.TabIndex = 0;
+            this.TabControlAddClass.Enter += new System.EventHandler(this.TabControlAddClass_Enter);
+            this.TabControlAddClass.Leave += new System.EventHandler(this.TabControlAddClass_Leave);
             // 
             // tabPageAddClass
             // 
@@ -114,7 +118,7 @@
             this.tabPageAddClass.Location = new System.Drawing.Point(4, 4);
             this.tabPageAddClass.Name = "tabPageAddClass";
             this.tabPageAddClass.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAddClass.Size = new System.Drawing.Size(967, 549);
+            this.tabPageAddClass.Size = new System.Drawing.Size(973, 567);
             this.tabPageAddClass.TabIndex = 0;
             this.tabPageAddClass.Text = "Thêm Lớp";
             this.tabPageAddClass.UseVisualStyleBackColor = true;
@@ -123,6 +127,7 @@
             // buttonAdd
             // 
             this.buttonAdd.BackColor = System.Drawing.Color.Purple;
+            this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAdd.FlatAppearance.BorderSize = 0;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.ForeColor = System.Drawing.Color.White;
@@ -132,6 +137,7 @@
             this.buttonAdd.TabIndex = 4;
             this.buttonAdd.Text = "Thêm";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // panel2
             // 
@@ -174,6 +180,7 @@
             this.textBoxHMStudent.Name = "textBoxHMStudent";
             this.textBoxHMStudent.Size = new System.Drawing.Size(277, 25);
             this.textBoxHMStudent.TabIndex = 2;
+            this.textBoxHMStudent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxHMStudent_KeyPress);
             // 
             // label3
             // 
@@ -195,6 +202,7 @@
             this.textBoxNữ.Name = "textBoxNữ";
             this.textBoxNữ.Size = new System.Drawing.Size(277, 25);
             this.textBoxNữ.TabIndex = 2;
+            this.textBoxNữ.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNữ_KeyPress);
             // 
             // label5
             // 
@@ -216,6 +224,7 @@
             this.textBoxNam.Name = "textBoxNam";
             this.textBoxNam.Size = new System.Drawing.Size(277, 25);
             this.textBoxNam.TabIndex = 2;
+            this.textBoxNam.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNam_KeyPress);
             // 
             // label4
             // 
@@ -263,7 +272,7 @@
             // 
             // tabPageSearchClass
             // 
-            this.tabPageSearchClass.Controls.Add(this.label9);
+            this.tabPageSearchClass.Controls.Add(this.labelCountClass);
             this.tabPageSearchClass.Controls.Add(this.label8);
             this.tabPageSearchClass.Controls.Add(this.dataGridViewClass);
             this.tabPageSearchClass.Controls.Add(this.pictureBoxSearch);
@@ -274,21 +283,22 @@
             this.tabPageSearchClass.Location = new System.Drawing.Point(4, 4);
             this.tabPageSearchClass.Name = "tabPageSearchClass";
             this.tabPageSearchClass.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSearchClass.Size = new System.Drawing.Size(967, 549);
+            this.tabPageSearchClass.Size = new System.Drawing.Size(973, 567);
             this.tabPageSearchClass.TabIndex = 1;
             this.tabPageSearchClass.Text = "Tìm Lớp";
             this.tabPageSearchClass.UseVisualStyleBackColor = true;
+            this.tabPageSearchClass.Enter += new System.EventHandler(this.tabPageSearchClass_Enter);
             // 
-            // label9
+            // labelCountClass
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(868, 506);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(24, 16);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "{?}";
+            this.labelCountClass.AutoSize = true;
+            this.labelCountClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCountClass.ForeColor = System.Drawing.Color.Black;
+            this.labelCountClass.Location = new System.Drawing.Point(868, 506);
+            this.labelCountClass.Name = "labelCountClass";
+            this.labelCountClass.Size = new System.Drawing.Size(24, 16);
+            this.labelCountClass.TabIndex = 11;
+            this.labelCountClass.Text = "{?}";
             // 
             // label8
             // 
@@ -361,6 +371,7 @@
             // 
             // pictureBoxSearch
             // 
+            this.pictureBoxSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxSearch.Image = global::Student_Manage.Properties.Resources._5948534;
             this.pictureBoxSearch.Location = new System.Drawing.Point(422, 109);
             this.pictureBoxSearch.Name = "pictureBoxSearch";
@@ -410,33 +421,50 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Tìm Lớp ";
             // 
-            // tabPageUPClass
+            // tabPageUPClassAndDelete
             // 
-            this.tabPageUPClass.Controls.Add(this.buttonUPClass);
-            this.tabPageUPClass.Controls.Add(this.panel6);
-            this.tabPageUPClass.Controls.Add(this.panel7);
-            this.tabPageUPClass.Controls.Add(this.panel8);
-            this.tabPageUPClass.Controls.Add(this.panel9);
-            this.tabPageUPClass.Controls.Add(this.textBox1);
-            this.tabPageUPClass.Controls.Add(this.label10);
-            this.tabPageUPClass.Controls.Add(this.textBox2);
-            this.tabPageUPClass.Controls.Add(this.label11);
-            this.tabPageUPClass.Controls.Add(this.textBox3);
-            this.tabPageUPClass.Controls.Add(this.label12);
-            this.tabPageUPClass.Controls.Add(this.textBox4);
-            this.tabPageUPClass.Controls.Add(this.label13);
-            this.tabPageUPClass.Controls.Add(this.label14);
-            this.tabPageUPClass.Location = new System.Drawing.Point(4, 4);
-            this.tabPageUPClass.Name = "tabPageUPClass";
-            this.tabPageUPClass.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUPClass.Size = new System.Drawing.Size(967, 549);
-            this.tabPageUPClass.TabIndex = 2;
-            this.tabPageUPClass.Text = "Cập Nhật Lớp";
-            this.tabPageUPClass.UseVisualStyleBackColor = true;
+            this.tabPageUPClassAndDelete.Controls.Add(this.buttonDelete);
+            this.tabPageUPClassAndDelete.Controls.Add(this.buttonUPClass);
+            this.tabPageUPClassAndDelete.Controls.Add(this.panel6);
+            this.tabPageUPClassAndDelete.Controls.Add(this.panel7);
+            this.tabPageUPClassAndDelete.Controls.Add(this.panel8);
+            this.tabPageUPClassAndDelete.Controls.Add(this.panel9);
+            this.tabPageUPClassAndDelete.Controls.Add(this.textBoxHMStudent1);
+            this.tabPageUPClassAndDelete.Controls.Add(this.label10);
+            this.tabPageUPClassAndDelete.Controls.Add(this.textBoxNu1);
+            this.tabPageUPClassAndDelete.Controls.Add(this.label11);
+            this.tabPageUPClassAndDelete.Controls.Add(this.textBoxNam1);
+            this.tabPageUPClassAndDelete.Controls.Add(this.label12);
+            this.tabPageUPClassAndDelete.Controls.Add(this.textBoxName1);
+            this.tabPageUPClassAndDelete.Controls.Add(this.label13);
+            this.tabPageUPClassAndDelete.Controls.Add(this.label14);
+            this.tabPageUPClassAndDelete.Location = new System.Drawing.Point(4, 4);
+            this.tabPageUPClassAndDelete.Name = "tabPageUPClassAndDelete";
+            this.tabPageUPClassAndDelete.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageUPClassAndDelete.Size = new System.Drawing.Size(973, 567);
+            this.tabPageUPClassAndDelete.TabIndex = 2;
+            this.tabPageUPClassAndDelete.Text = "Cập Nhật Và Xóa Lớp";
+            this.tabPageUPClassAndDelete.UseVisualStyleBackColor = true;
+            this.tabPageUPClassAndDelete.Leave += new System.EventHandler(this.tabPageUPClassAndDelete_Leave);
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.Color.Red;
+            this.buttonDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDelete.FlatAppearance.BorderSize = 0;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDelete.ForeColor = System.Drawing.Color.White;
+            this.buttonDelete.Location = new System.Drawing.Point(262, 306);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(121, 44);
+            this.buttonDelete.TabIndex = 19;
+            this.buttonDelete.Text = "Xóa";
+            this.buttonDelete.UseVisualStyleBackColor = false;
             // 
             // buttonUPClass
             // 
             this.buttonUPClass.BackColor = System.Drawing.Color.Purple;
+            this.buttonUPClass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonUPClass.FlatAppearance.BorderSize = 0;
             this.buttonUPClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUPClass.ForeColor = System.Drawing.Color.White;
@@ -479,15 +507,16 @@
             this.panel9.Size = new System.Drawing.Size(277, 2);
             this.panel9.TabIndex = 17;
             // 
-            // textBox1
+            // textBoxHMStudent1
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox1.Location = new System.Drawing.Point(546, 114);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(277, 25);
-            this.textBox1.TabIndex = 10;
+            this.textBoxHMStudent1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxHMStudent1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxHMStudent1.Location = new System.Drawing.Point(546, 114);
+            this.textBoxHMStudent1.Multiline = true;
+            this.textBoxHMStudent1.Name = "textBoxHMStudent1";
+            this.textBoxHMStudent1.Size = new System.Drawing.Size(277, 25);
+            this.textBoxHMStudent1.TabIndex = 10;
+            this.textBoxHMStudent1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxHMStudent1_KeyPress);
             // 
             // label10
             // 
@@ -500,15 +529,16 @@
             this.label10.TabIndex = 6;
             this.label10.Text = "Số lượng học sinh ?";
             // 
-            // textBox2
+            // textBoxNu1
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox2.Location = new System.Drawing.Point(546, 202);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(277, 25);
-            this.textBox2.TabIndex = 11;
+            this.textBoxNu1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNu1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxNu1.Location = new System.Drawing.Point(546, 202);
+            this.textBoxNu1.Multiline = true;
+            this.textBoxNu1.Name = "textBoxNu1";
+            this.textBoxNu1.Size = new System.Drawing.Size(277, 25);
+            this.textBoxNu1.TabIndex = 11;
+            this.textBoxNu1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNu1_KeyPress);
             // 
             // label11
             // 
@@ -521,15 +551,16 @@
             this.label11.TabIndex = 7;
             this.label11.Text = "Nữ :";
             // 
-            // textBox3
+            // textBoxNam1
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox3.Location = new System.Drawing.Point(106, 202);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(277, 25);
-            this.textBox3.TabIndex = 12;
+            this.textBoxNam1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNam1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxNam1.Location = new System.Drawing.Point(106, 202);
+            this.textBoxNam1.Multiline = true;
+            this.textBoxNam1.Name = "textBoxNam1";
+            this.textBoxNam1.Size = new System.Drawing.Size(277, 25);
+            this.textBoxNam1.TabIndex = 12;
+            this.textBoxNam1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNam1_KeyPress);
             // 
             // label12
             // 
@@ -542,15 +573,15 @@
             this.label12.TabIndex = 8;
             this.label12.Text = "Nam :";
             // 
-            // textBox4
+            // textBoxName1
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox4.Location = new System.Drawing.Point(106, 114);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(277, 25);
-            this.textBox4.TabIndex = 13;
+            this.textBoxName1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxName1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxName1.Location = new System.Drawing.Point(106, 114);
+            this.textBoxName1.Multiline = true;
+            this.textBoxName1.Name = "textBoxName1";
+            this.textBoxName1.Size = new System.Drawing.Size(277, 25);
+            this.textBoxName1.TabIndex = 13;
             // 
             // label13
             // 
@@ -591,8 +622,8 @@
             this.tabPageSearchClass.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).EndInit();
-            this.tabPageUPClass.ResumeLayout(false);
-            this.tabPageUPClass.PerformLayout();
+            this.tabPageUPClassAndDelete.ResumeLayout(false);
+            this.tabPageUPClassAndDelete.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -601,6 +632,35 @@
 
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.TabControl TabControlAddClass;
+        private System.Windows.Forms.TabPage tabPageSearchClass;
+        private System.Windows.Forms.PictureBox pictureBoxSearch;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox textBoxSearchClass;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dataGridViewClass;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelCountClass;
+        private System.Windows.Forms.TabPage tabPageUPClassAndDelete;
+        private System.Windows.Forms.Button buttonUPClass;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.TextBox textBoxHMStudent1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBoxNu1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBoxNam1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBoxName1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TabPage tabPageAddClass;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Panel panel2;
@@ -616,34 +676,6 @@
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tabPageSearchClass;
-        private System.Windows.Forms.PictureBox pictureBoxSearch;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBoxSearchClass;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridView dataGridViewClass;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TabPage tabPageUPClass;
-        private System.Windows.Forms.Button buttonUPClass;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }
