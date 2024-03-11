@@ -63,7 +63,18 @@ namespace Student_Manage.SMS.FormsUseControl
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
+            if (textBoxName.Text.Trim() == string.Empty || textBoxHMStudent.Text.Trim() == string.Empty || textBoxNam.Text.Trim() == string.Empty || textBoxNữ.Text.Trim() == string.Empty)
+            {
+                MessageBox.Show("Fisrt fill out all fields. " , "Required all fields" , MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+                bool check = Attendance.Attendance.AddClass(textBoxName.Text.Trim(), textBoxHMStudent.Text.Trim(), textBoxNam.Text.Trim(), textBoxNữ.Text.Trim(), sql);
 
+                if (check)
+                    ClearTextBox();
+            }
         }
 
         private void tabPageUPClassAndDelete_Leave(object sender, EventArgs e)
@@ -116,6 +127,75 @@ namespace Student_Manage.SMS.FormsUseControl
         private void textBoxNam1_KeyPress(object sender, KeyPressEventArgs e)
         {
             IntegerType(e);
+        }
+
+        private void textBoxSearchClass_TextChanged(object sender, EventArgs e)
+        {
+            Attendance.Attendance.DisplayAndSearchAllData("SELECT * FROM Class_Table WHERE class_name LIKE '%" + textBoxSearchClass.Text + "%';" + dataGridViewClass, sql); 
+
+        }
+
+        private void dataGridViewClass_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex != -1)
+            {
+                DataGridViewRow row = dataGridViewClass.Rows[e.RowIndex];
+                CID = row.Cells[0].Value.ToString();
+                textBoxName1.Text = row.Cells[1].Value.ToString();
+                textBoxHMStudent1.Text = row.Cells[2].Value.ToString();
+                textBoxNam1.Text = row.Cells[3].Value.ToString();
+                textBoxNu1.Text = row.Cells[4].Value.ToString();
+            }
+        }
+
+        private void buttonUPClass_Click(object sender, EventArgs e)
+        {
+            if(CID != "")
+            {
+                if (textBoxName1.Text.Trim() == string.Empty || textBoxHMStudent1.Text.Trim() == string.Empty || textBoxNam1.Text.Trim() == string.Empty || textBoxNu1.Text.Trim() == string.Empty)
+                {
+                    MessageBox.Show("Fisrt fill out all fields. ", "Required all fields", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else
+                {
+                    bool check = Attendance.Attendance.UpdateClass(CID,textBoxName1.Text.Trim(), textBoxHMStudent1.Text.Trim(), textBoxNam1.Text.Trim(), textBoxNu1.Text.Trim(), sql);
+
+                    if (check)
+                        ClearTextBox1();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Fisrt select row form table. ", "select row", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            if (CID != "")
+            {
+                if (textBoxName1.Text.Trim() == string.Empty || textBoxHMStudent1.Text.Trim() == string.Empty || textBoxNam1.Text.Trim() == string.Empty || textBoxNu1.Text.Trim() == string.Empty)
+                {
+                    MessageBox.Show("Fisrt fill out all fields. ", "Required all fields", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else
+                {
+                    DialogResult dialogResult = MessageBox.Show("Are you want to delete class>?","delete class", MessageBoxButtons.YesNo , MessageBoxIcon.Question);
+                    if(dialogResult == DialogResult.Yes)
+                    {
+                        bool check = Attendance.Attendance.DeleteClass(CID, sql);
+
+                        if (check)
+                            ClearTextBox1();\
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Fisrt select row form table. ", "select row", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

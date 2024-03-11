@@ -291,6 +291,7 @@
             // 
             // labelCountClass
             // 
+            this.labelCountClass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCountClass.AutoSize = true;
             this.labelCountClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCountClass.ForeColor = System.Drawing.Color.Black;
@@ -302,6 +303,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
@@ -338,6 +340,7 @@
             this.dataGridViewClass.ShowRowErrors = false;
             this.dataGridViewClass.Size = new System.Drawing.Size(912, 325);
             this.dataGridViewClass.TabIndex = 9;
+            this.dataGridViewClass.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewClass_CellClick);
             // 
             // Column1
             // 
@@ -398,6 +401,7 @@
             this.textBoxSearchClass.Name = "textBoxSearchClass";
             this.textBoxSearchClass.Size = new System.Drawing.Size(277, 25);
             this.textBoxSearchClass.TabIndex = 6;
+            this.textBoxSearchClass.TextChanged += new System.EventHandler(this.textBoxSearchClass_TextChanged);
             // 
             // label6
             // 
@@ -460,6 +464,7 @@
             this.buttonDelete.TabIndex = 19;
             this.buttonDelete.Text = "Xóa";
             this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonUPClass
             // 
@@ -474,6 +479,7 @@
             this.buttonUPClass.TabIndex = 18;
             this.buttonUPClass.Text = "Cập Nhật";
             this.buttonUPClass.UseVisualStyleBackColor = false;
+            this.buttonUPClass.Click += new System.EventHandler(this.buttonUPClass_Click);
             // 
             // panel6
             // 
