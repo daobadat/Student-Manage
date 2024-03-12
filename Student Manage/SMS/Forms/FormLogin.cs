@@ -13,7 +13,7 @@ namespace Student_Manage.SMS.Forms
 {
     public partial class FormLogin : Form
     {
-        private string sql=
+        //private string sql=
         public FormLogin()
         {
             InitializeComponent();
