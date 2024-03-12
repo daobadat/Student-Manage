@@ -12,6 +12,7 @@ namespace Student_Manage.SMS.Forms
 {
     public partial class FormMain : Form
     {
+        public string Username, Role;
         public FormMain()
         {
             InitializeComponent();
@@ -23,6 +24,11 @@ namespace Student_Manage.SMS.Forms
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
         }

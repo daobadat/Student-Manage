@@ -13,6 +13,7 @@ namespace Student_Manage.SMS.Forms
 {
     public partial class FormLogin : Form
     {
+        private string sql=
         public FormLogin()
         {
             InitializeComponent();
@@ -49,6 +50,8 @@ namespace Student_Manage.SMS.Forms
             {
                 if(check != "" ){
                     FormMain formMain = new FormMain();
+                    formMain.Username = textBoxUserName.Text;
+                    formMain.Role = check;   
                     textBoxUserName.Clear();
                     textBoxPassword.Clear();
                     pictureBoxHide_Click(sender, e);

@@ -162,6 +162,17 @@
     <None Include="Resources\student_man_avatar_user_toga_school_university_icon_2092941.png" />
     <None Include="Resources\icons8-tick-501.png" />
     <None Include="Resources\icons8-student-male-64.png" />
+    <None Include="Resources\icons8-computer-30.png" />
+    <None Include="Resources\icons8-attendance-30.png" />
+    <None Include="Resources\icons8-classroom-30.png" />
+    <None Include="Resources\icons8-add-user-group-woman-man-30 %282%29.png" />
+    <Content Include="Resources\icons8-drop-down-30.png" />
+    <None Include="Resources\icons8-minimize-30 %281%29.png" />
+    <None Include="Resources\icons8-log-out-30.png" />
+    <None Include="Resources\icons8-report-30 %281%29.png" />
+    <None Include="Resources\icons8-ereader-30.png" />
+    <None Include="Resources\icons8-ereader-30 %281%29.png" />
+    <None Include="Resources\icons8-setting-301.png" />
     <Content Include="TextTemplate.ico" />
   </ItemGroup>
   <ItemGroup />
