@@ -150,6 +150,9 @@
     <None Include="Resources\9051433.png" />
     <None Include="Resources\6596902.png" />
     <None Include="Resources\5948534.png" />
+    <None Include="Resources\student_man_avatar_user_toga_school_university_icon_2092941.png" />
+    <None Include="Resources\icons8-tick-501.png" />
+    <None Include="Resources\icons8-student-male-64.png" />
     <Content Include="TextTemplate.ico" />
   </ItemGroup>
   <ItemGroup />

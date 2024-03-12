@@ -263,6 +263,36 @@ namespace Student_Manage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_student_male_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-student-male-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_tick_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-tick-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap student_man_avatar_user_toga_school_university_icon_209294 {
+            get {
+                object obj = ResourceManager.GetObject("student_man_avatar_user_toga_school_university_icon_209294", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tải_xuống {
             get {
                 object obj = ResourceManager.GetObject("tải xuống", resourceCulture);

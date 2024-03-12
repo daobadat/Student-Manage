@@ -124,11 +124,14 @@
   <data name="4298899" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4298899.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="786263" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\786263.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-login-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-login-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6741122" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6741122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="complete (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\complete (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="9055153" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\9055153.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,14 +145,23 @@
   <data name="1828851" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1828851.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-tick-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-tick-501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5948534" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5948534.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9051433" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9051433.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="complete (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\complete (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="complete (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\complete (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="190411" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\190411.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="student_man_avatar_user_toga_school_university_icon_209294" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\student_man_avatar_user_toga_school_university_icon_2092941.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="65969021" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6596902.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,19 +178,16 @@
   <data name="90514331" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\9051433.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="786263" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\786263.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="complete (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\complete (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="6596902" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6596902.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="complete (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\complete (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="6741122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6741122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="9051433" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9051433.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5948534" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5948534.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-student-male-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-student-male-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
