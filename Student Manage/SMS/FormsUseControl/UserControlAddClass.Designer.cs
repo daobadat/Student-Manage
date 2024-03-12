@@ -48,13 +48,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPageSearchClass = new System.Windows.Forms.TabPage();
             this.labelCountClass = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelCount = new System.Windows.Forms.Label();
             this.dataGridViewClass = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBoxSearch = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.textBoxSearchClass = new System.Windows.Forms.TextBox();
@@ -76,6 +71,11 @@
             this.textBoxName1 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TabControlAddClass.SuspendLayout();
             this.tabPageAddClass.SuspendLayout();
             this.tabPageSearchClass.SuspendLayout();
@@ -273,7 +273,7 @@
             // tabPageSearchClass
             // 
             this.tabPageSearchClass.Controls.Add(this.labelCountClass);
-            this.tabPageSearchClass.Controls.Add(this.label8);
+            this.tabPageSearchClass.Controls.Add(this.labelCount);
             this.tabPageSearchClass.Controls.Add(this.dataGridViewClass);
             this.tabPageSearchClass.Controls.Add(this.pictureBoxSearch);
             this.tabPageSearchClass.Controls.Add(this.panel5);
@@ -301,18 +301,18 @@
             this.labelCountClass.TabIndex = 11;
             this.labelCountClass.Text = "{?}";
             // 
-            // label8
+            // labelCount
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(747, 506);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 16);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Tổng Cộng Lớp : ";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.labelCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCount.AutoSize = true;
+            this.labelCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCount.ForeColor = System.Drawing.Color.Black;
+            this.labelCount.Location = new System.Drawing.Point(747, 506);
+            this.labelCount.Name = "labelCount";
+            this.labelCount.Size = new System.Drawing.Size(125, 16);
+            this.labelCount.TabIndex = 10;
+            this.labelCount.Text = "Tổng Cộng Lớp : ";
+            this.labelCount.Click += new System.EventHandler(this.label8_Click);
             // 
             // dataGridViewClass
             // 
@@ -341,36 +341,6 @@
             this.dataGridViewClass.Size = new System.Drawing.Size(912, 325);
             this.dataGridViewClass.TabIndex = 9;
             this.dataGridViewClass.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewClass_CellClick);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Tên Lớp";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Số lượng học sinh ?";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Nam";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Nữ";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
             // 
             // pictureBoxSearch
             // 
@@ -607,9 +577,44 @@
             this.label14.ForeColor = System.Drawing.Color.DarkMagenta;
             this.label14.Location = new System.Drawing.Point(8, 8);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(116, 20);
+            this.label14.Size = new System.Drawing.Size(191, 20);
             this.label14.TabIndex = 5;
-            this.label14.Text = "Cập nhật lớp ";
+            this.label14.Text = "Cập nhật Và Xóa Lớp :";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Class_ID";
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Class_Name";
+            this.Column2.HeaderText = "Tên Lớp";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Class_HMClass";
+            this.Column3.HeaderText = "Số lượng học sinh ?";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Class_Male";
+            this.Column4.HeaderText = "Nam";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Class_Female";
+            this.Column5.HeaderText = "Nữ";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // UserControlAddClass
             // 
@@ -645,12 +650,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridViewClass;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelCount;
         private System.Windows.Forms.Label labelCountClass;
         private System.Windows.Forms.TabPage tabPageUPClassAndDelete;
         private System.Windows.Forms.Button buttonUPClass;
@@ -683,5 +683,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

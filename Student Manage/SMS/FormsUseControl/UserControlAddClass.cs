@@ -12,6 +12,10 @@ namespace Student_Manage.SMS.FormsUseControl
 {
     public partial class UserControlAddClass : UserControl
     {
+        private string sql = @"Data Source = .\SQLEXPRESS;
+                              Initial Catalog = Attendance_Management_System;
+                                Integrate Security = True ; ";
+        private string CID = "";
         public UserControlAddClass()
         {
             InitializeComponent();
@@ -23,7 +27,7 @@ namespace Student_Manage.SMS.FormsUseControl
                 e.Handled = true;
             }
         }
-        private string CID = "";
+        
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
@@ -131,7 +135,7 @@ namespace Student_Manage.SMS.FormsUseControl
 
         private void textBoxSearchClass_TextChanged(object sender, EventArgs e)
         {
-            Attendance.Attendance.DisplayAndSearchAllData("SELECT * FROM Class_Table WHERE class_name LIKE '%" + textBoxSearchClass.Text + "%';" + dataGridViewClass, sql); 
+            Attendance.Attendance.DisplayAndSearchAllData("SELECT * FROM Class_Table WHERE class_name LIKE '%" + textBoxSearchClass.Text + "%';" ,dataGridViewClass, sql); 
 
         }
 
@@ -188,7 +192,7 @@ namespace Student_Manage.SMS.FormsUseControl
                         bool check = Attendance.Attendance.DeleteClass(CID, sql);
 
                         if (check)
-                            ClearTextBox1();\
+                            ClearTextBox1();
                     }
                 }
             }

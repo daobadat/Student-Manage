@@ -66,6 +66,12 @@
     <Compile Include="SMS\FormsUseControl\UserControlAddClass.Designer.cs">
       <DependentUpon>UserControlAddClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="SMS\FormsUseControl\UserControlAddStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SMS\FormsUseControl\UserControlAddStudent.Designer.cs">
+      <DependentUpon>UserControlAddStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="SMS\FormsUseControl\UserControlDashBoard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </Compile>
     <EmbeddedResource Include="SMS\FormsUseControl\UserControlAddClass.resx">
       <DependentUpon>UserControlAddClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMS\FormsUseControl\UserControlAddStudent.resx">
+      <DependentUpon>UserControlAddStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SMS\FormsUseControl\UserControlDashBoard.resx">
       <DependentUpon>UserControlDashBoard.cs</DependentUpon>
