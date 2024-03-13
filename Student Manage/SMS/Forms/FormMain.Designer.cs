@@ -53,7 +53,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.labelRole = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
-            this.userControlDashBoard1 = new Student_Manage.SMS.FormsUseControl.UserControlDashBoard();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -377,22 +376,12 @@
             this.labelUsername.TabIndex = 1;
             this.labelUsername.Text = "{?}";
             // 
-            // userControlDashBoard1
-            // 
-            this.userControlDashBoard1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlDashBoard1.Location = new System.Drawing.Point(258, 165);
-            this.userControlDashBoard1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.userControlDashBoard1.Name = "userControlDashBoard1";
-            this.userControlDashBoard1.Size = new System.Drawing.Size(1068, 542);
-            this.userControlDashBoard1.TabIndex = 2;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1326, 707);
-            this.Controls.Add(this.userControlDashBoard1);
             this.Controls.Add(this.panelBack);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
@@ -445,6 +434,5 @@
         private System.Windows.Forms.Button buttonAttendence;
         private System.Windows.Forms.Button buttonReport;
         private System.Windows.Forms.Button buttonRegister;
-        private FormsUseControl.UserControlDashBoard userControlDashBoard1;
     }
 }
