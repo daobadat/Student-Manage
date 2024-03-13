@@ -12,9 +12,7 @@ namespace Student_Manage.SMS.FormsUseControl
 {
     public partial class UserControlDashBoard : UserControl
     {
-        private string sql = @"Data Source = .\SQLEXPRESS;
-                              Initial Catalog = Attendance_Management_System;
-                                Integrate Security = True ; ";
+        
         public UserControlDashBoard()
         {
             InitializeComponent();
