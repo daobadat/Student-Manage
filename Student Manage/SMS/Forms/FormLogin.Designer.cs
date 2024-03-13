@@ -31,7 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.groupBoxUserName = new System.Windows.Forms.GroupBox();
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.pictureBoxError = new System.Windows.Forms.PictureBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.pictureBoxShow = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHide = new System.Windows.Forms.PictureBox();
             this.labelError = new System.Windows.Forms.Label();
             this.labelForgotPS = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
@@ -43,17 +47,13 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.buttonLogin = new System.Windows.Forms.Button();
-            this.pictureBoxError = new System.Windows.Forms.PictureBox();
-            this.pictureBoxShow = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHide = new System.Windows.Forms.PictureBox();
             this.pictureBoxMinisize = new System.Windows.Forms.PictureBox();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.groupBoxUserName.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinisize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.SuspendLayout();
@@ -76,118 +76,7 @@
             this.groupBoxUserName.Size = new System.Drawing.Size(365, 412);
             this.groupBoxUserName.TabIndex = 3;
             this.groupBoxUserName.TabStop = false;
-            this.groupBoxUserName.Text = "Pls Login Fisrt";
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(52, 192);
-            this.textBoxPassword.Multiline = true;
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(226, 29);
-            this.textBoxPassword.TabIndex = 0;
-            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
-            this.textBoxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPassword_KeyPress);
-            this.textBoxPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxPassword_KeyUp);
-            // 
-            // labelError
-            // 
-            this.labelError.AutoSize = true;
-            this.labelError.Cursor = System.Windows.Forms.Cursors.Default;
-            this.labelError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelError.ForeColor = System.Drawing.Color.Red;
-            this.labelError.Location = new System.Drawing.Point(84, 245);
-            this.labelError.Name = "labelError";
-            this.labelError.Size = new System.Drawing.Size(190, 16);
-            this.labelError.TabIndex = 2;
-            this.labelError.Text = "invalid Username or Password";
-            this.labelError.Visible = false;
-            // 
-            // labelForgotPS
-            // 
-            this.labelForgotPS.AutoSize = true;
-            this.labelForgotPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelForgotPS.ForeColor = System.Drawing.Color.Purple;
-            this.labelForgotPS.Location = new System.Drawing.Point(106, 284);
-            this.labelForgotPS.Name = "labelForgotPS";
-            this.labelForgotPS.Size = new System.Drawing.Size(136, 16);
-            this.labelForgotPS.TabIndex = 2;
-            this.labelForgotPS.Text = "Forgot Password ?";
-            this.labelForgotPS.Click += new System.EventHandler(this.labelFP_Click);
-            // 
-            // labelPassword
-            // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPassword.Location = new System.Drawing.Point(49, 161);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(75, 16);
-            this.labelPassword.TabIndex = 2;
-            this.labelPassword.Text = "Password";
-            // 
-            // labelUserName
-            // 
-            this.labelUserName.AutoSize = true;
-            this.labelUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUserName.Location = new System.Drawing.Point(49, 69);
-            this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(78, 16);
-            this.labelUserName.TabIndex = 2;
-            this.labelUserName.Text = "Username";
-            // 
-            // textBoxUserName
-            // 
-            this.textBoxUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUserName.Location = new System.Drawing.Point(52, 100);
-            this.textBoxUserName.Multiline = true;
-            this.textBoxUserName.Name = "textBoxUserName";
-            this.textBoxUserName.Size = new System.Drawing.Size(257, 29);
-            this.textBoxUserName.TabIndex = 0;
-            this.textBoxUserName.TextChanged += new System.EventHandler(this.textBoxUserName_TextChanged);
-            this.textBoxUserName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxUserName_KeyPress);
-            this.textBoxUserName.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxUserName_KeyUp);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Location = new System.Drawing.Point(504, 64);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 461);
-            this.panel1.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(575, 414);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(208, 24);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Student Management";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label4.Location = new System.Drawing.Point(644, 446);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 24);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "System";
-            // 
-            // pictureBox
-            // 
-            this.pictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox.Image = global::Student_Manage.Properties.Resources.graduated;
-            this.pictureBox.InitialImage = null;
-            this.pictureBox.Location = new System.Drawing.Point(566, 85);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(238, 320);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox.TabIndex = 5;
-            this.pictureBox.TabStop = false;
+            this.groupBoxUserName.Text = "Làm Ơn Đăng Nhập";
             // 
             // buttonLogin
             // 
@@ -199,7 +88,7 @@
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(260, 54);
             this.buttonLogin.TabIndex = 1;
-            this.buttonLogin.Text = "Secure Log In";
+            this.buttonLogin.Text = "Đăng Nhập ";
             this.buttonLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -217,6 +106,18 @@
             this.pictureBoxError.TabIndex = 4;
             this.pictureBoxError.TabStop = false;
             this.pictureBoxError.Visible = false;
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.Location = new System.Drawing.Point(52, 192);
+            this.textBoxPassword.Multiline = true;
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(226, 29);
+            this.textBoxPassword.TabIndex = 0;
+            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
+            this.textBoxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPassword_KeyPress);
+            this.textBoxPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxPassword_KeyUp);
             // 
             // pictureBoxShow
             // 
@@ -247,6 +148,105 @@
             this.pictureBoxHide.TabStop = false;
             this.pictureBoxHide.Click += new System.EventHandler(this.pictureBoxHide_Click);
             this.pictureBoxHide.MouseHover += new System.EventHandler(this.pictureBoxHide_MouseHover);
+            // 
+            // labelError
+            // 
+            this.labelError.AutoSize = true;
+            this.labelError.Cursor = System.Windows.Forms.Cursors.Default;
+            this.labelError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelError.ForeColor = System.Drawing.Color.Red;
+            this.labelError.Location = new System.Drawing.Point(84, 245);
+            this.labelError.Name = "labelError";
+            this.labelError.Size = new System.Drawing.Size(219, 16);
+            this.labelError.TabIndex = 2;
+            this.labelError.Text = "Sai Tên Đăng Nhập Hoặc Mật Khẩu";
+            this.labelError.Visible = false;
+            // 
+            // labelForgotPS
+            // 
+            this.labelForgotPS.AutoSize = true;
+            this.labelForgotPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelForgotPS.ForeColor = System.Drawing.Color.Purple;
+            this.labelForgotPS.Location = new System.Drawing.Point(106, 284);
+            this.labelForgotPS.Name = "labelForgotPS";
+            this.labelForgotPS.Size = new System.Drawing.Size(126, 16);
+            this.labelForgotPS.TabIndex = 2;
+            this.labelForgotPS.Text = "Quên Mật Khẩu ? ";
+            this.labelForgotPS.Click += new System.EventHandler(this.labelFP_Click);
+            // 
+            // labelPassword
+            // 
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.Location = new System.Drawing.Point(49, 161);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(70, 16);
+            this.labelPassword.TabIndex = 2;
+            this.labelPassword.Text = "Mật Khẩu";
+            // 
+            // labelUserName
+            // 
+            this.labelUserName.AutoSize = true;
+            this.labelUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserName.Location = new System.Drawing.Point(49, 69);
+            this.labelUserName.Name = "labelUserName";
+            this.labelUserName.Size = new System.Drawing.Size(115, 16);
+            this.labelUserName.TabIndex = 2;
+            this.labelUserName.Text = "Tên Đăng Nhập";
+            // 
+            // textBoxUserName
+            // 
+            this.textBoxUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUserName.Location = new System.Drawing.Point(52, 100);
+            this.textBoxUserName.Multiline = true;
+            this.textBoxUserName.Name = "textBoxUserName";
+            this.textBoxUserName.Size = new System.Drawing.Size(257, 29);
+            this.textBoxUserName.TabIndex = 0;
+            this.textBoxUserName.TextChanged += new System.EventHandler(this.textBoxUserName_TextChanged);
+            this.textBoxUserName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxUserName_KeyPress);
+            this.textBoxUserName.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxUserName_KeyUp);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.Location = new System.Drawing.Point(504, 64);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(10, 461);
+            this.panel1.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label3.Location = new System.Drawing.Point(588, 414);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(194, 24);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Hệ Thống Quản Lý ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label4.Location = new System.Drawing.Point(636, 441);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(101, 24);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Sinh Viên";
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox.Image = global::Student_Manage.Properties.Resources.graduated;
+            this.pictureBox.InitialImage = null;
+            this.pictureBox.Location = new System.Drawing.Point(566, 85);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(238, 320);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox.TabIndex = 5;
+            this.pictureBox.TabStop = false;
             // 
             // pictureBoxMinisize
             // 
@@ -297,10 +297,10 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.groupBoxUserName.ResumeLayout(false);
             this.groupBoxUserName.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxError)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinisize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             this.ResumeLayout(false);
