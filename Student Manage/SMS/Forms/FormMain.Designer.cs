@@ -79,7 +79,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(258, 742);
+            this.panel1.Size = new System.Drawing.Size(258, 707);
             this.panel1.TabIndex = 0;
             // 
             // buttonRegister
@@ -184,7 +184,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 180);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(8, 562);
+            this.panel4.Size = new System.Drawing.Size(8, 527);
             this.panel4.TabIndex = 1;
             // 
             // panelSide
@@ -236,7 +236,7 @@
             this.panelBack.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBack.Location = new System.Drawing.Point(258, 0);
             this.panelBack.Name = "panelBack";
-            this.panelBack.Size = new System.Drawing.Size(1105, 165);
+            this.panelBack.Size = new System.Drawing.Size(1068, 165);
             this.panelBack.TabIndex = 1;
             // 
             // panelExpand
@@ -247,7 +247,7 @@
             this.panelExpand.Controls.Add(this.buttonLogout);
             this.panelExpand.Controls.Add(this.buttonMinimize);
             this.panelExpand.Controls.Add(this.panel3);
-            this.panelExpand.Location = new System.Drawing.Point(893, 58);
+            this.panelExpand.Location = new System.Drawing.Point(856, 58);
             this.panelExpand.Name = "panelExpand";
             this.panelExpand.Size = new System.Drawing.Size(200, 107);
             this.panelExpand.TabIndex = 0;
@@ -333,7 +333,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelTop.Location = new System.Drawing.Point(0, 65);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1105, 100);
+            this.panelTop.Size = new System.Drawing.Size(1068, 100);
             this.panelTop.TabIndex = 0;
             // 
             // label5
@@ -383,7 +383,7 @@
             this.userControlDashBoard1.Location = new System.Drawing.Point(258, 165);
             this.userControlDashBoard1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.userControlDashBoard1.Name = "userControlDashBoard1";
-            this.userControlDashBoard1.Size = new System.Drawing.Size(1105, 577);
+            this.userControlDashBoard1.Size = new System.Drawing.Size(1068, 542);
             this.userControlDashBoard1.TabIndex = 2;
             // 
             // FormMain
@@ -391,7 +391,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1363, 742);
+            this.ClientSize = new System.Drawing.Size(1326, 707);
             this.Controls.Add(this.userControlDashBoard1);
             this.Controls.Add(this.panelBack);
             this.Controls.Add(this.panel1);

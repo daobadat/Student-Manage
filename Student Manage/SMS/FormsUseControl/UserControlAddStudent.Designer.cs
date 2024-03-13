@@ -53,6 +53,11 @@
             this.labelCountStudent = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridViewStudent = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel5 = new System.Windows.Forms.Panel();
             this.textBoxSearchStudent = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -76,11 +81,6 @@
             this.buttonUPClass = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TabControlAddStudent.SuspendLayout();
             this.tabPageAddStudent.SuspendLayout();
             this.tabPageSearchStudent.SuspendLayout();
@@ -99,7 +99,7 @@
             this.TabControlAddStudent.Location = new System.Drawing.Point(0, 0);
             this.TabControlAddStudent.Name = "TabControlAddStudent";
             this.TabControlAddStudent.SelectedIndex = 0;
-            this.TabControlAddStudent.Size = new System.Drawing.Size(981, 596);
+            this.TabControlAddStudent.Size = new System.Drawing.Size(995, 515);
             this.TabControlAddStudent.TabIndex = 1;
             // 
             // tabPageAddStudent
@@ -122,7 +122,7 @@
             this.tabPageAddStudent.Location = new System.Drawing.Point(4, 4);
             this.tabPageAddStudent.Name = "tabPageAddStudent";
             this.tabPageAddStudent.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAddStudent.Size = new System.Drawing.Size(973, 567);
+            this.tabPageAddStudent.Size = new System.Drawing.Size(987, 486);
             this.tabPageAddStudent.TabIndex = 0;
             this.tabPageAddStudent.Text = "Thêm Sinh Viên";
             this.tabPageAddStudent.UseVisualStyleBackColor = true;
@@ -305,7 +305,7 @@
             this.tabPageSearchStudent.Location = new System.Drawing.Point(4, 4);
             this.tabPageSearchStudent.Name = "tabPageSearchStudent";
             this.tabPageSearchStudent.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSearchStudent.Size = new System.Drawing.Size(973, 567);
+            this.tabPageSearchStudent.Size = new System.Drawing.Size(987, 486);
             this.tabPageSearchStudent.TabIndex = 1;
             this.tabPageSearchStudent.Text = "Tìm Sinh Viên";
             this.tabPageSearchStudent.UseVisualStyleBackColor = true;
@@ -352,7 +352,7 @@
             this.labelCountStudent.AutoSize = true;
             this.labelCountStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCountStudent.ForeColor = System.Drawing.Color.Black;
-            this.labelCountStudent.Location = new System.Drawing.Point(869, 506);
+            this.labelCountStudent.Location = new System.Drawing.Point(883, 506);
             this.labelCountStudent.Name = "labelCountStudent";
             this.labelCountStudent.Size = new System.Drawing.Size(24, 16);
             this.labelCountStudent.TabIndex = 11;
@@ -364,7 +364,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(705, 506);
+            this.label8.Location = new System.Drawing.Point(719, 506);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(166, 16);
             this.label8.TabIndex = 10;
@@ -394,8 +394,43 @@
             this.dataGridViewStudent.ShowCellErrors = false;
             this.dataGridViewStudent.ShowEditingIcon = false;
             this.dataGridViewStudent.ShowRowErrors = false;
-            this.dataGridViewStudent.Size = new System.Drawing.Size(912, 325);
+            this.dataGridViewStudent.Size = new System.Drawing.Size(912, 303);
             this.dataGridViewStudent.TabIndex = 9;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Student_ID";
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Student_Name";
+            this.Column2.HeaderText = "Tên Sinh Viên";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Student_RegNo";
+            this.Column3.HeaderText = "Số Đăng Kí ?";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Class_Name";
+            this.Column4.HeaderText = "Class";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Student_Gender";
+            this.Column5.HeaderText = "Giới Tính";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // panel5
             // 
@@ -470,7 +505,7 @@
             this.tabPageUPStudentAndDelete.Location = new System.Drawing.Point(4, 4);
             this.tabPageUPStudentAndDelete.Name = "tabPageUPStudentAndDelete";
             this.tabPageUPStudentAndDelete.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUPStudentAndDelete.Size = new System.Drawing.Size(973, 567);
+            this.tabPageUPStudentAndDelete.Size = new System.Drawing.Size(987, 486);
             this.tabPageUPStudentAndDelete.TabIndex = 2;
             this.tabPageUPStudentAndDelete.Text = "Cập Nhật Và Xóa Sinh Viên";
             this.tabPageUPStudentAndDelete.UseVisualStyleBackColor = true;
@@ -650,41 +685,6 @@
             this.label14.TabIndex = 5;
             this.label14.Text = "Cập nhật Và Xóa Sinh Viên : ";
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Student_ID";
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Student_Name";
-            this.Column2.HeaderText = "Tên Sinh Viên";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Student_RegNo";
-            this.Column3.HeaderText = "Số Đăng Kí ?";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Class_Name";
-            this.Column4.HeaderText = "Class";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Student_Gender";
-            this.Column5.HeaderText = "Giới Tính";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
             // UserControlAddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -694,7 +694,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControlAddStudent";
-            this.Size = new System.Drawing.Size(981, 596);
+            this.Size = new System.Drawing.Size(995, 515);
             this.TabControlAddStudent.ResumeLayout(false);
             this.tabPageAddStudent.ResumeLayout(false);
             this.tabPageAddStudent.PerformLayout();
