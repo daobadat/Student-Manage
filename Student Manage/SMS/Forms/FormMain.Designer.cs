@@ -5,6 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
+        /// 
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
@@ -28,15 +29,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonRegister = new System.Windows.Forms.Button();
             this.buttonReport = new System.Windows.Forms.Button();
             this.buttonAddStudent = new System.Windows.Forms.Button();
             this.buttonAddClass = new System.Windows.Forms.Button();
-            this.buttonAttendence = new System.Windows.Forms.Button();
+            this.buttonAttendance = new System.Windows.Forms.Button();
             this.buttonDashboard = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panelSide = new System.Windows.Forms.Panel();
+            this.panelSlide = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -53,6 +55,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.labelRole = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
+            this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -71,7 +74,7 @@
             this.panel1.Controls.Add(this.buttonReport);
             this.panel1.Controls.Add(this.buttonAddStudent);
             this.panel1.Controls.Add(this.buttonAddClass);
-            this.panel1.Controls.Add(this.buttonAttendence);
+            this.panel1.Controls.Add(this.buttonAttendance);
             this.panel1.Controls.Add(this.buttonDashboard);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel2);
@@ -96,6 +99,7 @@
             this.buttonRegister.Text = "           Đăng kí";
             this.buttonRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonRegister.UseVisualStyleBackColor = true;
+            this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
             // 
             // buttonReport
             // 
@@ -112,6 +116,7 @@
             this.buttonReport.Text = "           Phản hồi";
             this.buttonReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonReport.UseVisualStyleBackColor = true;
+            this.buttonReport.Click += new System.EventHandler(this.buttonReport_Click);
             // 
             // buttonAddStudent
             // 
@@ -128,6 +133,7 @@
             this.buttonAddStudent.Text = "           Thêm sinh viên";
             this.buttonAddStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonAddStudent.UseVisualStyleBackColor = true;
+            this.buttonAddStudent.Click += new System.EventHandler(this.buttonAddStudent_Click);
             // 
             // buttonAddClass
             // 
@@ -144,22 +150,24 @@
             this.buttonAddClass.Text = "           Thêm lớp";
             this.buttonAddClass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonAddClass.UseVisualStyleBackColor = true;
+            this.buttonAddClass.Click += new System.EventHandler(this.buttonAddClass_Click);
             // 
-            // buttonAttendence
+            // buttonAttendance
             // 
-            this.buttonAttendence.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonAttendence.FlatAppearance.BorderSize = 0;
-            this.buttonAttendence.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAttendence.ForeColor = System.Drawing.Color.White;
-            this.buttonAttendence.Image = global::Student_Manage.Properties.Resources.icons8_attendance_30;
-            this.buttonAttendence.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAttendence.Location = new System.Drawing.Point(8, 227);
-            this.buttonAttendence.Name = "buttonAttendence";
-            this.buttonAttendence.Size = new System.Drawing.Size(250, 47);
-            this.buttonAttendence.TabIndex = 3;
-            this.buttonAttendence.Text = "           Điểm danh";
-            this.buttonAttendence.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonAttendence.UseVisualStyleBackColor = true;
+            this.buttonAttendance.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonAttendance.FlatAppearance.BorderSize = 0;
+            this.buttonAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAttendance.ForeColor = System.Drawing.Color.White;
+            this.buttonAttendance.Image = global::Student_Manage.Properties.Resources.icons8_attendance_30;
+            this.buttonAttendance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAttendance.Location = new System.Drawing.Point(8, 227);
+            this.buttonAttendance.Name = "buttonAttendance";
+            this.buttonAttendance.Size = new System.Drawing.Size(250, 47);
+            this.buttonAttendance.TabIndex = 3;
+            this.buttonAttendance.Text = "           Điểm danh";
+            this.buttonAttendance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonAttendance.UseVisualStyleBackColor = true;
+            this.buttonAttendance.Click += new System.EventHandler(this.buttonAttendance_Click);
             // 
             // buttonDashboard
             // 
@@ -176,24 +184,25 @@
             this.buttonDashboard.Text = "           Trang chủ";
             this.buttonDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonDashboard.UseVisualStyleBackColor = true;
+            this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.panelSide);
+            this.panel4.Controls.Add(this.panelSlide);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 180);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(8, 527);
             this.panel4.TabIndex = 1;
             // 
-            // panelSide
+            // panelSlide
             // 
-            this.panelSide.BackColor = System.Drawing.Color.White;
-            this.panelSide.Location = new System.Drawing.Point(0, 0);
-            this.panelSide.Name = "panelSide";
-            this.panelSide.Size = new System.Drawing.Size(8, 47);
-            this.panelSide.TabIndex = 0;
-            this.panelSide.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            this.panelSlide.BackColor = System.Drawing.Color.White;
+            this.panelSlide.Location = new System.Drawing.Point(0, 0);
+            this.panelSlide.Name = "panelSlide";
+            this.panelSlide.Size = new System.Drawing.Size(8, 47);
+            this.panelSlide.TabIndex = 0;
+            this.panelSlide.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // panel2
             // 
@@ -265,6 +274,7 @@
             this.buttonLogout.Text = "   Đăng xuất";
             this.buttonLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonLogout.UseVisualStyleBackColor = false;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // buttonMinimize
             // 
@@ -280,6 +290,7 @@
             this.buttonMinimize.Text = "   Thu nhỏ";
             this.buttonMinimize.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonMinimize.UseVisualStyleBackColor = false;
+            this.buttonMinimize.Click += new System.EventHandler(this.buttonMinimize_Click);
             // 
             // panel3
             // 
@@ -376,6 +387,10 @@
             this.labelUsername.TabIndex = 1;
             this.labelUsername.Text = "{?}";
             // 
+            // timerDateAndTime
+            // 
+            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -391,6 +406,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý sinh viên";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -427,12 +443,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panelSide;
+        private System.Windows.Forms.Panel panelSlide;
         private System.Windows.Forms.Button buttonDashboard;
         private System.Windows.Forms.Button buttonAddStudent;
         private System.Windows.Forms.Button buttonAddClass;
-        private System.Windows.Forms.Button buttonAttendence;
+        private System.Windows.Forms.Button buttonAttendance;
         private System.Windows.Forms.Button buttonReport;
         private System.Windows.Forms.Button buttonRegister;
+        private System.Windows.Forms.Timer timerDateAndTime;
     }
 }
