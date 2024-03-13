@@ -165,6 +165,7 @@
             this.comboBoxClass.Name = "comboBoxClass";
             this.comboBoxClass.Size = new System.Drawing.Size(277, 24);
             this.comboBoxClass.TabIndex = 5;
+            this.comboBoxClass.Click += new System.EventHandler(this.comboBoxClass_Click);
             // 
             // buttonAdd
             // 
@@ -318,7 +319,7 @@
             this.comboBoxSearchBy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxSearchBy.FormattingEnabled = true;
             this.comboBoxSearchBy.Items.AddRange(new object[] {
-            "--SELECT--",
+            "",
             "Tên ",
             "Số Đăng Kí",
             "Lớp"});
@@ -396,6 +397,7 @@
             this.dataGridViewStudent.ShowRowErrors = false;
             this.dataGridViewStudent.Size = new System.Drawing.Size(912, 303);
             this.dataGridViewStudent.TabIndex = 9;
+            this.dataGridViewStudent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStudent_CellClick);
             // 
             // Column1
             // 
@@ -449,6 +451,7 @@
             this.textBoxSearchStudent.Name = "textBoxSearchStudent";
             this.textBoxSearchStudent.Size = new System.Drawing.Size(277, 25);
             this.textBoxSearchStudent.TabIndex = 6;
+            this.textBoxSearchStudent.TextChanged += new System.EventHandler(this.textBoxSearchStudent_TextChanged);
             // 
             // label6
             // 

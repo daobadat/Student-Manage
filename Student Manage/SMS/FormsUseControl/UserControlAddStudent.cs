@@ -40,27 +40,7 @@ namespace Student_Manage.SMS.FormsUseControl
             radioButtonFemale1.Checked = false;
             SID = "";
         }
-
-        private void buttonAdd_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxHMStudent_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
-        private void textBoxNữ_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
-        private void textBoxNam_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
+      
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -75,7 +55,9 @@ namespace Student_Manage.SMS.FormsUseControl
         {
            textBoxSearchStudent.Clear();
             comboBoxSearchBy.SelectedIndex = -1;
-            //thieu database 15:15
+            Attendance.Attendance.DisplayAndSearchAllData("SELECT Student_ID , Student_Name , Student_Reg , Student_Gender,Class_Name FROM Student_Table INNER JOHN Class_Table ON Student_Table.Class_ID = Class_Table.Class_ID;", dataGridViewStudent, sql);
+            dataGridViewStudent.Columns[0].Visible = false;
+            labelCountStudent.Text = dataGridViewStudent.Rows.Count.ToString();
         }
 
         private void tabPageAddStudent_Enter(object sender, EventArgs e)
@@ -91,6 +73,81 @@ namespace Student_Manage.SMS.FormsUseControl
         private void tabPageUPStudentAndDelete_Leave(object sender, EventArgs e)
         {
             ClearTextBox1();
+        }
+
+        private void comboBoxClass_Click(object sender, EventArgs e)
+        {
+            comboBoxClass.Items.Clear();
+            Attendance.Attendance.FillComboBox("SELECT DISTINCT (Class_Name) FROM Class_Table;", comboBoxClass,sql);
+
+        }
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            string gender = "";
+            if(radioButtonMale.Checked)
+            {
+                gender = "Male";
+            }
+            if (radioButtonFemale.Checked) 
+            {
+                gender = "Female";
+            }
+            if(textBoxName.Text.Trim() == string.Empty || textBoxRegNo.Text.Trim() == string.Empty || comboBoxClass.SelectedIndex == -1 )
+            {
+                MessageBox.Show("Fisrt fill out all fields. ", "Required all fields", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (radioButtonMale.Checked == false && radioButtonFemale.Checked == false)
+            {
+                MessageBox.Show("Fisrt fill out all fields. ", "Required all fields", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+                bool check = Attendance.Attendance.AddStudent(textBoxName.Text.Trim(), textBoxRegNo.Text.Trim(),comboBoxClass.ToString(),gender,sql);
+                if (check)
+                {
+                    ClearTextBox();
+                }
+            }
+        }
+
+        private void textBoxSearchStudent_TextChanged(object sender, EventArgs e)
+        {
+            if (comboBoxSearchBy.SelectedIndex == 0)
+            {
+                Attendance.Attendance.DisplayAndSearchAllData("SELECT Student_ID , Student_Name , Student_Reg , Student_Gender,Class_Name FROM Student_Table INNER JOHN Class_Table ON Student_Table.Class_ID = Class_Table.Class_ID WHERE Student_Name LIKE '%"+ textBoxSearchStudent.Text.Trim()+"%'",dataGridViewStudent,sql );
+            }
+            if (comboBoxSearchBy.SelectedIndex == 1)
+            {
+                Attendance.Attendance.DisplayAndSearchAllData("SELECT Student_ID , Student_Name , Student_Reg , Student_Gender,Class_Name FROM Student_Table INNER JOHN Class_Table ON Student_Table.Class_ID = Class_Table.Class_ID WHERE Student_RegNo LIKE '%" + textBoxSearchStudent.Text.Trim() + "%'", dataGridViewStudent, sql);
+            }
+            if (comboBoxSearchBy.SelectedIndex == 2)
+            {
+                Attendance.Attendance.DisplayAndSearchAllData("SELECT Student_ID , Student_Name , Student_Reg , Student_Gender,Class_Name FROM Student_Table INNER JOHN Class_Table ON Student_Table.Class_ID = Class_Table.Class_ID WHERE Class_Name LIKE '%" + textBoxSearchStudent.Text.Trim() + "%'", dataGridViewStudent, sql);
+            }
+        }
+
+        private void dataGridViewStudent_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex != 1)
+            {
+                DataGridViewRow row = dataGridViewStudent.Rows[e.RowIndex];
+                SID = row.Cells["Colum1"].Value.ToString();
+                textBoxName1.Text = row.Cells["Colum2"].Value.ToString();
+                textBoxRegNo1.Text = row.Cells["Colum3"].Value.ToString();
+                comboBoxClass1.Items.Clear();
+                Attendance.Attendance.FillComboBox("SELECT DISTINCT (Class_Name) FROM Class_Table;", comboBoxClass1, sql);
+                comboBoxClass1.SelectedItem = row.Cells["Colum4"].Value.ToString();
+                if (row.Cells["Colum5"].Value.ToString() == "Male")
+                {
+                    radioButtonMale1.Checked = true;
+                }
+                if (row.Cells["Colum6"].Value.ToString() == "Female")
+                {
+                    radioButtonFemale1.Checked = true;
+                }
+            }//24:03
         }
     }
 }
