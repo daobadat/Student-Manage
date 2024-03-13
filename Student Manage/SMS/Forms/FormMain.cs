@@ -16,6 +16,7 @@ namespace Student_Manage.SMS.Forms
         public FormMain()
         {
             InitializeComponent();
+            timerDateAndTime.Start();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -28,9 +29,81 @@ namespace Student_Manage.SMS.Forms
 
         }
 
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc muốn đăng xuất?","Đăng xuất",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                timerDateAndTime.Stop();
+                Close();
+            }
+            else panelExpand.Hide();
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            panelExpand.Hide();
+            labelUsername.Text = Username;
+            labelRole.Text = Role;
+            if(Role == "User")
+            {
+                buttonDashboard.Hide();
+                buttonAddClass.Hide();
+                buttonAddStudent.Hide();
+                buttonRegister.Hide();
+            }
+        }
+
+        private void buttonMinimize_Click(object sender, EventArgs e)
+        {
+            panelExpand.Hide();
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void timerDateAndTime_Tick(object sender, EventArgs e)
+        {
+            DateTime now = DateTime.Now;
+            labelTime.Text = now.ToString("F");
+        }
+
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void buttonDashboard_Click(object sender, EventArgs e)
+        {
+            MoveSidePanel(buttonDashboard);
+        }
+
+        private void buttonAttendance_Click(object sender, EventArgs e)
+        {
+            MoveSidePanel(buttonAttendance);
+        }
+
+        private void buttonAddClass_Click(object sender, EventArgs e)
+        {
+            MoveSidePanel(buttonAddClass);
+        }
+
+        private void buttonAddStudent_Click(object sender, EventArgs e)
+        {
+            MoveSidePanel(buttonAddStudent);
+        }
+
+        private void buttonReport_Click(object sender, EventArgs e)
+        {
+            MoveSidePanel(buttonReport);
+        }
+
+        private void buttonRegister_Click(object sender, EventArgs e)
+        {
+            MoveSidePanel(buttonRegister);
+        }
+
+        private void MoveSidePanel(Control button)
+        {
+            panelSlide.Location = new Point(button.Location.X - button.Location.X, button.Location.Y-180);
         }
     }
 }
