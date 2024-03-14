@@ -77,7 +77,7 @@
             this.buttonVerify.Name = "buttonVerify";
             this.buttonVerify.Size = new System.Drawing.Size(288, 44);
             this.buttonVerify.TabIndex = 9;
-            this.buttonVerify.Text = "Verify";
+            this.buttonVerify.Text = "Xác Minh";
             this.buttonVerify.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonVerify.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonVerify.UseVisualStyleBackColor = false;
