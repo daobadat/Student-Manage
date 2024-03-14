@@ -101,6 +101,11 @@ namespace Student_Manage.SMS.Forms
             MoveSidePanel(buttonRegister);
         }
 
+        private void userControlDashBoard1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void MoveSidePanel(Control button)
         {
             panelSlide.Location = new Point(button.Location.X - button.Location.X, button.Location.Y-180);

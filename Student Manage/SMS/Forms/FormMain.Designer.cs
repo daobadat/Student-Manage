@@ -31,40 +31,41 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonRegister = new System.Windows.Forms.Button();
-            this.buttonReport = new System.Windows.Forms.Button();
-            this.buttonAddStudent = new System.Windows.Forms.Button();
-            this.buttonAddClass = new System.Windows.Forms.Button();
-            this.buttonAttendance = new System.Windows.Forms.Button();
-            this.buttonDashboard = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelSlide = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelBack = new System.Windows.Forms.Panel();
             this.panelExpand = new System.Windows.Forms.Panel();
-            this.buttonLogout = new System.Windows.Forms.Button();
-            this.buttonMinimize = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelTime = new System.Windows.Forms.Label();
-            this.pictureBoxExpand = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelTop = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.labelRole = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
+            this.buttonLogout = new System.Windows.Forms.Button();
+            this.buttonMinimize = new System.Windows.Forms.Button();
+            this.pictureBoxExpand = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.buttonRegister = new System.Windows.Forms.Button();
+            this.buttonReport = new System.Windows.Forms.Button();
+            this.buttonAddStudent = new System.Windows.Forms.Button();
+            this.buttonAddClass = new System.Windows.Forms.Button();
+            this.buttonAttendance = new System.Windows.Forms.Button();
+            this.buttonDashboard = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.userControlDashBoard1 = new Student_Manage.SMS.FormsUseControl.UserControlDashBoard();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelBack.SuspendLayout();
             this.panelExpand.SuspendLayout();
+            this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExpand)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,6 +84,201 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(258, 707);
             this.panel1.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panelSlide);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 180);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(8, 527);
+            this.panel4.TabIndex = 1;
+            // 
+            // panelSlide
+            // 
+            this.panelSlide.BackColor = System.Drawing.Color.White;
+            this.panelSlide.Location = new System.Drawing.Point(0, 0);
+            this.panelSlide.Name = "panelSlide";
+            this.panelSlide.Size = new System.Drawing.Size(8, 47);
+            this.panelSlide.TabIndex = 0;
+            this.panelSlide.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(258, 180);
+            this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(35, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(185, 19);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Hệ thống quản lý sinh viên";
+            // 
+            // panelBack
+            // 
+            this.panelBack.Controls.Add(this.panelExpand);
+            this.panelBack.Controls.Add(this.labelTime);
+            this.panelBack.Controls.Add(this.pictureBoxExpand);
+            this.panelBack.Controls.Add(this.pictureBox2);
+            this.panelBack.Controls.Add(this.panelTop);
+            this.panelBack.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBack.Location = new System.Drawing.Point(258, 0);
+            this.panelBack.Name = "panelBack";
+            this.panelBack.Size = new System.Drawing.Size(1068, 165);
+            this.panelBack.TabIndex = 1;
+            // 
+            // panelExpand
+            // 
+            this.panelExpand.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelExpand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
+            this.panelExpand.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelExpand.Controls.Add(this.buttonLogout);
+            this.panelExpand.Controls.Add(this.buttonMinimize);
+            this.panelExpand.Controls.Add(this.panel3);
+            this.panelExpand.Location = new System.Drawing.Point(856, 58);
+            this.panelExpand.Name = "panelExpand";
+            this.panelExpand.Size = new System.Drawing.Size(200, 107);
+            this.panelExpand.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(198, 5);
+            this.panel3.TabIndex = 0;
+            // 
+            // labelTime
+            // 
+            this.labelTime.AutoSize = true;
+            this.labelTime.BackColor = System.Drawing.Color.White;
+            this.labelTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
+            this.labelTime.Location = new System.Drawing.Point(36, 40);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(29, 19);
+            this.labelTime.TabIndex = 1;
+            this.labelTime.Text = "{?}";
+            this.labelTime.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // panelTop
+            // 
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
+            this.panelTop.Controls.Add(this.label5);
+            this.panelTop.Controls.Add(this.label4);
+            this.panelTop.Controls.Add(this.labelRole);
+            this.panelTop.Controls.Add(this.labelUsername);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelTop.Location = new System.Drawing.Point(0, 65);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(1068, 100);
+            this.panelTop.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(61, 51);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 19);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Vai trò: ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(61, 19);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 19);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Chào mừng: ";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // labelRole
+            // 
+            this.labelRole.AutoSize = true;
+            this.labelRole.ForeColor = System.Drawing.Color.White;
+            this.labelRole.Location = new System.Drawing.Point(177, 51);
+            this.labelRole.Name = "labelRole";
+            this.labelRole.Size = new System.Drawing.Size(29, 19);
+            this.labelRole.TabIndex = 1;
+            this.labelRole.Text = "{?}";
+            // 
+            // labelUsername
+            // 
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.ForeColor = System.Drawing.Color.White;
+            this.labelUsername.Location = new System.Drawing.Point(177, 19);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(29, 19);
+            this.labelUsername.TabIndex = 1;
+            this.labelUsername.Text = "{?}";
+            // 
+            // timerDateAndTime
+            // 
+            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
+            // 
+            // buttonLogout
+            // 
+            this.buttonLogout.BackColor = System.Drawing.Color.White;
+            this.buttonLogout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonLogout.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.buttonLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
+            this.buttonLogout.Image = global::Student_Manage.Properties.Resources.icons8_log_out_30;
+            this.buttonLogout.Location = new System.Drawing.Point(0, 53);
+            this.buttonLogout.Name = "buttonLogout";
+            this.buttonLogout.Size = new System.Drawing.Size(198, 48);
+            this.buttonLogout.TabIndex = 2;
+            this.buttonLogout.Text = "   Đăng xuất";
+            this.buttonLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonLogout.UseVisualStyleBackColor = false;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
+            // 
+            // buttonMinimize
+            // 
+            this.buttonMinimize.BackColor = System.Drawing.Color.White;
+            this.buttonMinimize.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonMinimize.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.buttonMinimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
+            this.buttonMinimize.Image = global::Student_Manage.Properties.Resources.icons8_minimize_30__1_;
+            this.buttonMinimize.Location = new System.Drawing.Point(0, 5);
+            this.buttonMinimize.Name = "buttonMinimize";
+            this.buttonMinimize.Size = new System.Drawing.Size(198, 48);
+            this.buttonMinimize.TabIndex = 1;
+            this.buttonMinimize.Text = "   Thu nhỏ";
+            this.buttonMinimize.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonMinimize.UseVisualStyleBackColor = false;
+            this.buttonMinimize.Click += new System.EventHandler(this.buttonMinimize_Click);
+            // 
+            // pictureBoxExpand
+            // 
+            this.pictureBoxExpand.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxExpand.Image = global::Student_Manage.Properties.Resources.icons8_drop_down_30;
+            this.pictureBoxExpand.Location = new System.Drawing.Point(922, 34);
+            this.pictureBoxExpand.Name = "pictureBoxExpand";
+            this.pictureBoxExpand.Size = new System.Drawing.Size(27, 24);
+            this.pictureBoxExpand.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxExpand.TabIndex = 2;
+            this.pictureBoxExpand.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Student_Manage.Properties.Resources.student_man_avatar_user_toga_school_university_icon_209294;
+            this.pictureBox2.Location = new System.Drawing.Point(856, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 58);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // buttonRegister
             // 
@@ -186,44 +382,6 @@
             this.buttonDashboard.UseVisualStyleBackColor = true;
             this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.panelSlide);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 180);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(8, 527);
-            this.panel4.TabIndex = 1;
-            // 
-            // panelSlide
-            // 
-            this.panelSlide.BackColor = System.Drawing.Color.White;
-            this.panelSlide.Location = new System.Drawing.Point(0, 0);
-            this.panelSlide.Name = "panelSlide";
-            this.panelSlide.Size = new System.Drawing.Size(8, 47);
-            this.panelSlide.TabIndex = 0;
-            this.panelSlide.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(258, 180);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(35, 93);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Hệ thống quản lý sinh viên";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Student_Manage.Properties.Resources.icons8_student_male_64;
@@ -234,162 +392,14 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panelBack
+            // userControlDashBoard1
             // 
-            this.panelBack.Controls.Add(this.panelExpand);
-            this.panelBack.Controls.Add(this.labelTime);
-            this.panelBack.Controls.Add(this.pictureBoxExpand);
-            this.panelBack.Controls.Add(this.pictureBox2);
-            this.panelBack.Controls.Add(this.panelTop);
-            this.panelBack.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBack.Location = new System.Drawing.Point(258, 0);
-            this.panelBack.Name = "panelBack";
-            this.panelBack.Size = new System.Drawing.Size(1068, 165);
-            this.panelBack.TabIndex = 1;
-            // 
-            // panelExpand
-            // 
-            this.panelExpand.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelExpand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
-            this.panelExpand.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelExpand.Controls.Add(this.buttonLogout);
-            this.panelExpand.Controls.Add(this.buttonMinimize);
-            this.panelExpand.Controls.Add(this.panel3);
-            this.panelExpand.Location = new System.Drawing.Point(856, 58);
-            this.panelExpand.Name = "panelExpand";
-            this.panelExpand.Size = new System.Drawing.Size(200, 107);
-            this.panelExpand.TabIndex = 0;
-            // 
-            // buttonLogout
-            // 
-            this.buttonLogout.BackColor = System.Drawing.Color.White;
-            this.buttonLogout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonLogout.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.buttonLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
-            this.buttonLogout.Image = global::Student_Manage.Properties.Resources.icons8_log_out_30;
-            this.buttonLogout.Location = new System.Drawing.Point(0, 53);
-            this.buttonLogout.Name = "buttonLogout";
-            this.buttonLogout.Size = new System.Drawing.Size(198, 48);
-            this.buttonLogout.TabIndex = 2;
-            this.buttonLogout.Text = "   Đăng xuất";
-            this.buttonLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonLogout.UseVisualStyleBackColor = false;
-            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
-            // 
-            // buttonMinimize
-            // 
-            this.buttonMinimize.BackColor = System.Drawing.Color.White;
-            this.buttonMinimize.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonMinimize.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.buttonMinimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
-            this.buttonMinimize.Image = global::Student_Manage.Properties.Resources.icons8_minimize_30__1_;
-            this.buttonMinimize.Location = new System.Drawing.Point(0, 5);
-            this.buttonMinimize.Name = "buttonMinimize";
-            this.buttonMinimize.Size = new System.Drawing.Size(198, 48);
-            this.buttonMinimize.TabIndex = 1;
-            this.buttonMinimize.Text = "   Thu nhỏ";
-            this.buttonMinimize.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonMinimize.UseVisualStyleBackColor = false;
-            this.buttonMinimize.Click += new System.EventHandler(this.buttonMinimize_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(198, 5);
-            this.panel3.TabIndex = 0;
-            // 
-            // labelTime
-            // 
-            this.labelTime.AutoSize = true;
-            this.labelTime.BackColor = System.Drawing.Color.White;
-            this.labelTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
-            this.labelTime.Location = new System.Drawing.Point(36, 40);
-            this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(29, 19);
-            this.labelTime.TabIndex = 1;
-            this.labelTime.Text = "{?}";
-            this.labelTime.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // pictureBoxExpand
-            // 
-            this.pictureBoxExpand.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxExpand.Image = global::Student_Manage.Properties.Resources.icons8_drop_down_30;
-            this.pictureBoxExpand.Location = new System.Drawing.Point(796, 34);
-            this.pictureBoxExpand.Name = "pictureBoxExpand";
-            this.pictureBoxExpand.Size = new System.Drawing.Size(27, 24);
-            this.pictureBoxExpand.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxExpand.TabIndex = 2;
-            this.pictureBoxExpand.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Student_Manage.Properties.Resources.student_man_avatar_user_toga_school_university_icon_209294;
-            this.pictureBox2.Location = new System.Drawing.Point(730, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 58);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // panelTop
-            // 
-            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(3)))), ((int)(((byte)(125)))));
-            this.panelTop.Controls.Add(this.label5);
-            this.panelTop.Controls.Add(this.label4);
-            this.panelTop.Controls.Add(this.labelRole);
-            this.panelTop.Controls.Add(this.labelUsername);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelTop.Location = new System.Drawing.Point(0, 65);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1068, 100);
-            this.panelTop.TabIndex = 0;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(61, 51);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 19);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Vai trò: ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(61, 19);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 19);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Chào mừng: ";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // labelRole
-            // 
-            this.labelRole.AutoSize = true;
-            this.labelRole.ForeColor = System.Drawing.Color.White;
-            this.labelRole.Location = new System.Drawing.Point(177, 51);
-            this.labelRole.Name = "labelRole";
-            this.labelRole.Size = new System.Drawing.Size(29, 19);
-            this.labelRole.TabIndex = 1;
-            this.labelRole.Text = "{?}";
-            // 
-            // labelUsername
-            // 
-            this.labelUsername.AutoSize = true;
-            this.labelUsername.ForeColor = System.Drawing.Color.White;
-            this.labelUsername.Location = new System.Drawing.Point(177, 19);
-            this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(29, 19);
-            this.labelUsername.TabIndex = 1;
-            this.labelUsername.Text = "{?}";
-            // 
-            // timerDateAndTime
-            // 
-            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
+            this.userControlDashBoard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlDashBoard1.Location = new System.Drawing.Point(258, 165);
+            this.userControlDashBoard1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userControlDashBoard1.Name = "userControlDashBoard1";
+            this.userControlDashBoard1.Size = new System.Drawing.Size(1068, 542);
+            this.userControlDashBoard1.TabIndex = 2;
             // 
             // FormMain
             // 
@@ -397,6 +407,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1326, 707);
+            this.Controls.Add(this.userControlDashBoard1);
             this.Controls.Add(this.panelBack);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
@@ -411,14 +422,14 @@
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelBack.ResumeLayout(false);
             this.panelBack.PerformLayout();
             this.panelExpand.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExpand)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExpand)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -451,5 +462,6 @@
         private System.Windows.Forms.Button buttonReport;
         private System.Windows.Forms.Button buttonRegister;
         private System.Windows.Forms.Timer timerDateAndTime;
+        private FormsUseControl.UserControlDashBoard userControlDashBoard1;
     }
 }
