@@ -662,6 +662,7 @@
             this.buttonDelete.TabIndex = 19;
             this.buttonDelete.Text = "Xóa";
             this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonUPClass
             // 
@@ -676,6 +677,7 @@
             this.buttonUPClass.TabIndex = 18;
             this.buttonUPClass.Text = "Cập Nhật";
             this.buttonUPClass.UseVisualStyleBackColor = false;
+            this.buttonUPClass.Click += new System.EventHandler(this.buttonUPClass_Click);
             // 
             // label14
             // 

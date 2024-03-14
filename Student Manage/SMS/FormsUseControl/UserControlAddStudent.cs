@@ -17,7 +17,7 @@ namespace Student_Manage.SMS.FormsUseControl
         private string sql = @"Data Source = .\SQLEXPRESS;
                               Initial Catalog = Attendance_Management_System;
                                 Integrate Security = True ; ";
-        private string SID = "";
+        private string SID = "",gender = "";
         public UserControlAddStudent()
         {
             InitializeComponent();
@@ -147,7 +147,82 @@ namespace Student_Manage.SMS.FormsUseControl
                 {
                     radioButtonFemale1.Checked = true;
                 }
-            }//24:03
+            }
+        }
+
+        private void buttonUPClass_Click(object sender, EventArgs e)
+        {
+            if(SID != " ")
+            {
+                
+                if (radioButtonMale1.Checked)
+                {
+                    gender = "Male";
+                }
+                if (radioButtonFemale1.Checked)
+                {
+                    gender = "Female";
+                }
+                if (textBoxName1.Text.Trim() == string.Empty || textBoxRegNo1.Text.Trim() == string.Empty || comboBoxClass1.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Fisrt fill out all fields. ", "Required all fields", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else if (radioButtonMale1.Checked == false && radioButtonFemale1.Checked == false)
+                {
+                    MessageBox.Show("Fisrt fill out all fields. ", "Required all fields", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else
+                {
+                    bool check = Attendance.Attendance.UpdateStudent(SID,textBoxName1.Text.Trim(), textBoxRegNo1.Text.Trim(), comboBoxClass1.ToString(), gender, sql);
+                    if (check)
+                    {
+                        ClearTextBox1();
+                    }
+                    else
+                        MessageBox.Show("Fisrt select row from table. ", "select row", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            if (SID != " ")
+            {
+                
+                if (radioButtonMale1.Checked)
+                {
+                    gender = "Male";
+                }
+                if (radioButtonFemale1.Checked)
+                {
+                    gender = "Female";
+                }
+                if (textBoxName1.Text.Trim() == string.Empty || textBoxRegNo1.Text.Trim() == string.Empty || comboBoxClass1.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Fisrt fill out all fields. ", "Required all fields", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else if (radioButtonMale1.Checked == false && radioButtonFemale1.Checked == false)
+                {
+                    MessageBox.Show("Fisrt fill out all fields. ", "Required all fields", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else
+                {
+                    DialogResult dialogResult = MessageBox.Show("Are you want to delete student?", "delete student", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        bool check = Attendance.Attendance.DeleteStudent(SID, sql);
+
+                        if (check)
+                            ClearTextBox1();
+                    }
+                    else
+                        MessageBox.Show("Fisrt select row from table. ", "select row", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
         }
     }
 }
