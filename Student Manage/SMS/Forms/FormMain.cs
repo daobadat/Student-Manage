@@ -74,36 +74,50 @@ namespace Student_Manage.SMS.Forms
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonDashboard);
+            userControlDashBoard1.Count();
+            userControlDashBoard1.Visible = true;
         }
 
         private void buttonAttendance_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonAttendance);
+            userControlDashBoard1.Visible = false;
         }
 
         private void buttonAddClass_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonAddClass);
+            userControlDashBoard1.Visible = false;
         }
 
         private void buttonAddStudent_Click(object sender, EventArgs e)
         {
+
             MoveSidePanel(buttonAddStudent);
+            userControlDashBoard1.Visible = false;
         }
 
         private void buttonReport_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonReport);
+            userControlDashBoard1.Visible = false;
         }
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonRegister);
+            userControlDashBoard1.Visible = false;
         }
 
         private void userControlDashBoard1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBoxExpand_Click(object sender, EventArgs e)
+        {
+            if(panelExpand.Visible) panelExpand.Visible = false;
+            else panelExpand.Visible = true;
         }
 
         private void MoveSidePanel(Control button)
