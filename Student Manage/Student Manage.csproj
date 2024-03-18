@@ -58,21 +58,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Manage-Student-Form\QuanLySinhVien\Form1.cs" />
-    <Compile Include="Manage-Student-Form\QuanLySinhVien\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs" />
-    <Compile Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
-    <Compile Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
-    <Compile Include="Manage-Student-Form\QuanLySinhVien\obj\Release\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
-    <Compile Include="Manage-Student-Form\QuanLySinhVien\Program.cs" />
-    <Compile Include="Manage-Student-Form\QuanLySinhVien\Properties\AssemblyInfo.cs" />
-    <Compile Include="Manage-Student-Form\QuanLySinhVien\Properties\Resources.Designer.cs" />
-    <Compile Include="Manage-Student-Form\QuanLySinhVien\Properties\Settings.Designer.cs" />
-    <Compile Include="Manage-Student-Form\QuanLySinhVien\Student.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SMS\FormsUseControl\UserControlAddClass.cs">
@@ -112,13 +97,6 @@
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="SMS\Forms\toolTip.cs" />
-    <EmbeddedResource Include="Manage-Student-Form\QuanLySinhVien\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form1.resources" />
-    <EmbeddedResource Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\StudentsManagement.Form1.resources" />
-    <EmbeddedResource Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\StudentsManagement.Properties.Resources.resources" />
-    <EmbeddedResource Include="Manage-Student-Form\QuanLySinhVien\Properties\Resources.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -147,59 +125,6 @@
     <EmbeddedResource Include="SMS\Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Manage-Student-Form\.git\config" />
-    <None Include="Manage-Student-Form\.git\description" />
-    <None Include="Manage-Student-Form\.git\HEAD" />
-    <None Include="Manage-Student-Form\.git\hooks\applypatch-msg.sample" />
-    <None Include="Manage-Student-Form\.git\hooks\commit-msg.sample" />
-    <None Include="Manage-Student-Form\.git\hooks\fsmonitor-watchman.sample" />
-    <None Include="Manage-Student-Form\.git\hooks\post-update.sample" />
-    <None Include="Manage-Student-Form\.git\hooks\pre-applypatch.sample" />
-    <None Include="Manage-Student-Form\.git\hooks\pre-commit.sample" />
-    <None Include="Manage-Student-Form\.git\hooks\pre-merge-commit.sample" />
-    <None Include="Manage-Student-Form\.git\hooks\pre-push.sample" />
-    <None Include="Manage-Student-Form\.git\hooks\pre-rebase.sample" />
-    <None Include="Manage-Student-Form\.git\hooks\pre-receive.sample" />
-    <None Include="Manage-Student-Form\.git\hooks\prepare-commit-msg.sample" />
-    <None Include="Manage-Student-Form\.git\hooks\push-to-checkout.sample" />
-    <None Include="Manage-Student-Form\.git\hooks\update.sample" />
-    <None Include="Manage-Student-Form\.git\index" />
-    <None Include="Manage-Student-Form\.git\info\exclude" />
-    <None Include="Manage-Student-Form\.git\logs\HEAD" />
-    <None Include="Manage-Student-Form\.git\logs\refs\heads\master" />
-    <None Include="Manage-Student-Form\.git\logs\refs\remotes\origin\HEAD" />
-    <None Include="Manage-Student-Form\.git\objects\pack\pack-ed1d11fd8550b8fc3b0ae9d74f7f53e2d94ceb21.idx" />
-    <None Include="Manage-Student-Form\.git\objects\pack\pack-ed1d11fd8550b8fc3b0ae9d74f7f53e2d94ceb21.pack" />
-    <None Include="Manage-Student-Form\.git\packed-refs" />
-    <None Include="Manage-Student-Form\.git\refs\heads\master" />
-    <None Include="Manage-Student-Form\.git\refs\remotes\origin\HEAD" />
-    <None Include="Manage-Student-Form\.vs\Manage-Student-Form\FileContentIndex\cfd3b4fa-799c-4948-86bb-6e00f928f078.vsidx" />
-    <None Include="Manage-Student-Form\.vs\Manage-Student-Form\v17\.wsuo" />
-    <None Include="Manage-Student-Form\.vs\slnx.sqlite" />
-    <None Include="Manage-Student-Form\.vs\StudentsManagement\FileContentIndex\13adf894-0311-4d01-b35d-9683a6ee5a3e.vsidx" />
-    <None Include="Manage-Student-Form\.vs\StudentsManagement\v17\.suo" />
-    <None Include="Manage-Student-Form\.vs\VSWorkspaceState.json" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\App.config" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\bin\Debug\StudentsManagement.exe.config" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\Form1.datasource" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.cache" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\QuanLySinhVien.csprojAssemblyReference.cache" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\StudentsManagement.csproj.AssemblyReference.cache" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\StudentsManagement.csproj.CoreCompileInputs.cache" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\StudentsManagement.csproj.GenerateResource.cache" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\StudentsManagement.csprojAssemblyReference.cache" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\obj\Release\StudentsManagement.csproj.AssemblyReference.cache" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\Program.datasource" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\Properties\DataSources\Student.datasource" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\Properties\Settings.settings" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\QuanLySinhVien.Properties.Settings.datasource" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\Student.datasource" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\Student1.datasource" />
-    <None Include="Manage-Student-Form\QuanLySinhVien\StudentsManagement.csproj" />
-    <None Include="Manage-Student-Form\README.md" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -244,17 +169,6 @@
     <None Include="Resources\icons8-classroom-301.png" />
     <None Include="Resources\icons8-class-30.png" />
     <None Include="Resources\icons8-add-user-group-woman-man-30.png" />
-    <Content Include="Manage-Student-Form\Capture.PNG" />
-    <Content Include="Manage-Student-Form\QuanLySinhVien\bin\Debug\StudentsManagement.exe" />
-    <Content Include="Manage-Student-Form\QuanLySinhVien\bin\Debug\StudentsManagement.pdb" />
-    <Content Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.FileListAbsolute.txt" />
-    <Content Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\StudentsManagement.csproj.FileListAbsolute.txt" />
-    <Content Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\StudentsManagement.exe" />
-    <Content Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\StudentsManagement.pdb" />
-    <Content Include="Manage-Student-Form\QuanLySinhVien\obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
-    <Content Include="Manage-Student-Form\QuanLySinhVien\Resources\AreaCode.txt" />
-    <Content Include="Manage-Student-Form\QuanLySinhVien\Resources\StudentList.txt" />
-    <Content Include="Manage-Student-Form\StudentsManagement.sln" />
     <Content Include="Resources\icons8-drop-down-30.png" />
     <None Include="Resources\icons8-minimize-30 %281%29.png" />
     <None Include="Resources\icons8-log-out-30.png" />
@@ -265,10 +179,6 @@
     <None Include="Resources\icons8-user-groups-30.png" />
     <Content Include="TextTemplate.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Manage-Student-Form\.git\objects\info\" />
-    <Folder Include="Manage-Student-Form\.git\refs\tags\" />
-    <Folder Include="Manage-Student-Form\QuanLySinhVien\bin\Release\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
