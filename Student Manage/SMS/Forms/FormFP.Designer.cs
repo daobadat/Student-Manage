@@ -62,7 +62,7 @@
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(281, 22);
             this.textBoxEmail.TabIndex = 8;
-            this.textBoxEmail.Text = "user@gmail.com";
+            this.textBoxEmail.Text = "daodat@gmail.com";
             this.textBoxEmail.TextChanged += new System.EventHandler(this.textBoxEmail_TextChanged);
             this.textBoxEmail.Enter += new System.EventHandler(this.textBoxEmail_Enter);
             this.textBoxEmail.Leave += new System.EventHandler(this.textBoxEmail_Leave);
@@ -81,7 +81,7 @@
             this.buttonVerify.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonVerify.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonVerify.UseVisualStyleBackColor = false;
-            this.buttonVerify.Click += new System.EventHandler(this.buttonLogin_Click);
+            this.buttonVerify.Click += new System.EventHandler(this.buttonVerify_Click);
             // 
             // pictureBox
             // 

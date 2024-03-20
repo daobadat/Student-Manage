@@ -8,6 +8,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Student_Manage.SMS.Forms
 {
@@ -34,13 +35,13 @@ namespace Student_Manage.SMS.Forms
                 return false;
             }
         }
-        private void buttonLogin_Click(object sender, EventArgs e)
+        private void buttonVerify_Click(object sender, EventArgs e)
         {
-            if (IsvalidEmail(textBoxEmail.Text))
+            if (IsvalidEmail(textBoxEmail.Text.Trim()))
             {
-                //string userName = Attendance.Attendance.GetUsernamePassword();  them sql
-                //string passWord = Attendance.Attendance.GetUsernamePassword();  them sql
-                //MessageBox.Show("Your Username is " + userName + " and Password is" + password +"." ,"information",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                string userName = Attendance.Attendance.GetUsernamePassword("SELECT User_Name FROM User_Table WHERE User_Email = '" + textBoxEmail.Text.Trim() + "' ;",sql);
+                string password = Attendance.Attendance.GetUsernamePassword("SELECT User_Pass FROM User_Table WHERE User_Email = '" + textBoxEmail.Text.Trim() + "' ;",sql);
+                MessageBox.Show("Your Username is " + userName + " and Password is" + password +"." ,"information",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
         }
 
@@ -67,7 +68,7 @@ namespace Student_Manage.SMS.Forms
                 textBoxEmail.Clear();
                 textBoxEmail.ForeColor = Color.Black;
             }
-            if (IsvalidEmail(textBoxEmail.Text) || textBoxEmail.Text == "daodat@gmail.com")
+            if (IsvalidEmail(textBoxEmail.Text.Trim()) || textBoxEmail.Text.Trim() == "daodat@gmail.com")
             {
                 pictureBoxError.Show();
             }
@@ -84,7 +85,7 @@ namespace Student_Manage.SMS.Forms
                 textBoxEmail.Text = "daodat@gmail.com";
                 textBoxEmail.ForeColor = Color.DarkGray;
             }
-            if (IsvalidEmail(textBoxEmail.Text) || textBoxEmail.Text == "daodat@gmail.com")
+            if (IsvalidEmail(textBoxEmail.Text.Trim()) || textBoxEmail.Text.Trim() == "daodat@gmail.com")
             {
                 pictureBoxError.Show();
             }
