@@ -13,6 +13,9 @@ namespace Student_Manage.SMS.Forms
     public partial class FormMain : Form
     {
         public string Username, Role;
+        private string sql = @"Data Source = DESKTOP-A98QJSC;
+                             Initial Catalog = Student_Management_System;
+                             Integrated Security = True;";
         public FormMain()
         {
             InitializeComponent();

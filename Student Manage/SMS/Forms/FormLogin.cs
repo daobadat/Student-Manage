@@ -8,22 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Data.SqlClient;
 
 namespace Student_Manage.SMS.Forms
 {
     public partial class FormLogin : Form
     {
-        //private string sql=
+        private string sql= @"Data Source = DESKTOP-A98QJSC;
+                             Initial Catalog = Student_Management_System;
+                             Integrated Security = True;";
         public FormLogin()
         {
             InitializeComponent();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+    
         private void labelFP_Click(object sender, EventArgs e)
         {
             FormForgotPassword formFP = new FormForgotPassword();
@@ -33,24 +31,21 @@ namespace Student_Manage.SMS.Forms
         private void pictureBoxShow_Click(object sender, EventArgs e)
         {
             
-            if(textBoxPassword.PasswordChar == '*')
-            {
-                pictureBoxShow.Hide();
-                pictureBoxHide.Show();
-                textBoxPassword.PasswordChar = '\0';
-            }
+            textBoxPassword.UseSystemPasswordChar = false;
+            pictureBoxHide.Show();
+            pictureBoxShow.Hide();
              
 
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            string check = "";
+            string check = Attendance.Attendance.IsValidNamePass(textBoxUserName.Text.Trim(),textBoxPassword.Text.Trim(),sql);
             if(textBoxUserName.Text.Trim() != string.Empty && textBoxPassword.Text.Trim() != string.Empty)
             {
                 if(check != "" ){
                     FormMain formMain = new FormMain();
-                    formMain.Username = textBoxUserName.Text;
+                   formMain.Username = textBoxUserName.Text;
                     formMain.Role = check;   
                     textBoxUserName.Clear();
                     textBoxPassword.Clear();
@@ -93,12 +88,9 @@ namespace Student_Manage.SMS.Forms
         private void pictureBoxHide_Click(object sender, EventArgs e)
         {
 
-            if (textBoxPassword.PasswordChar == '\0')
-            {
-                pictureBoxShow.Hide();
-                pictureBoxHide.Show();
-                textBoxPassword.PasswordChar = '*';
-            }
+            textBoxPassword.UseSystemPasswordChar = true;
+            pictureBoxShow.Show();
+            pictureBoxHide.Hide();
 
 
         }
@@ -150,14 +142,10 @@ namespace Student_Manage.SMS.Forms
             }
         }
 
-        private void textBoxPassword_TextChanged(object sender, EventArgs e)
-        {
-            textBoxPassword.PasswordChar = '*';
-        }
 
-        private void textBoxUserName_TextChanged(object sender, EventArgs e)
+        private void pictureBoxMinisize_MouseHover(object sender, EventArgs e)
         {
-
+            toolTip.SetToolTip(pictureBoxMinisize, "Minimsize");
         }
     }
 }

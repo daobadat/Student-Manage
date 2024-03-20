@@ -13,6 +13,9 @@ namespace Student_Manage.SMS.Forms
 {
     public partial class FormForgotPassword : Form
     {
+        private string sql = @"Data Source = DESKTOP-A98QJSC;
+                             Initial Catalog = Student_Management_System;
+                             Integrated Security = True;";
         public FormForgotPassword()
         {
             InitializeComponent();
@@ -49,7 +52,7 @@ namespace Student_Manage.SMS.Forms
 
         private void pictureBoxClose_MouseMove(object sender, MouseEventArgs e)
         {
-            toolTip1.SetToolTip(pictureBoxClose, "Close");
+            toolTip.SetToolTip(pictureBoxClose, "Close");
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -93,7 +96,7 @@ namespace Student_Manage.SMS.Forms
 
         private void pictureBoxError_MouseHover(object sender, EventArgs e)
         {
-            toolTip1.SetToolTip(pictureBoxError, "Ivalid Email!");
+            toolTip.SetToolTip(pictureBoxError, "Ivalid Email!");
         }
 
         private void FormForgotPassword_Load(object sender, EventArgs e)
