@@ -12,9 +12,9 @@ namespace Student_Manage.SMS.FormsUseControl
 {
     public partial class UserControlAddClass : UserControl
     {
-        private string sql = @"Data Source = .\SQLEXPRESS;
-                              Initial Catalog = Attendance_Management_System;
-                                Integrate Security = True ; ";
+        private string sql = @"Data Source = DESKTOP-A98QJSC;
+                             Initial Catalog = Student_Management_System;
+                             Integrated Security = True;";
         private string CID = "";
         public UserControlAddClass()
         {
@@ -89,7 +89,7 @@ namespace Student_Manage.SMS.FormsUseControl
         private void tabPageSearchClass_Enter(object sender, EventArgs e)
         {
             textBoxSearchClass.Clear();
-            //thieu database phut28:22
+            //Attendance.Attendance.DisplayAndSearchAllData("SELECT * FROM Class_Table")
 
         }
 

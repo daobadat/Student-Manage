@@ -184,7 +184,6 @@
     <None Include="Resources\icons8-setting-301.png" />
     <None Include="Resources\icons8-user-groups-30.png" />
     <Content Include="sql\Attendance.dll" />
-    <Content Include="sql\Student Management System.sql" />
     <Content Include="TextTemplate.ico" />
   </ItemGroup>
   <ItemGroup />
