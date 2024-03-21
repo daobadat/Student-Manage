@@ -7,15 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace Student_Manage.SMS.Forms
 {
     public partial class FormMain : Form
     {
         public string Username, Role;
-        //private string sql = @"Data Source = DESKTOP-A98QJSC;
-           //                  Initial Catalog = Student_Management_System;
-            //                 Integrated Security = True;";
+        private string sql = @"Data Source = DESKTOP-A98QJSC;
+                            Initial Catalog = Student_Management_System;
+                          Integrated Security = True;";
         public FormMain()
         {
             InitializeComponent();
