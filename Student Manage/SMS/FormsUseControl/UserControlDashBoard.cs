@@ -8,40 +8,23 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace Student_Manage.SMS.FormsUseControl
 {
     public partial class UserControlDashBoard : UserControl
     {
-        
+        private string sql = @"Data Source = DESKTOP-A98QJSC;
+                            Initial Catalog = Student_Management_System;
+                          Integrated Security = True;";
         public UserControlDashBoard()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         public void Count()
         {
-
+            labelTotalClasses.Text = Attendance.Attendance.Count("SELECT COUNT(*) FROM Class_Table",sql).ToString();
         }
 
         private void UserControlDashBoard_Load(object sender, EventArgs e)

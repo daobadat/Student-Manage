@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelTotalClasses = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelTotalStudents = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelTotalRoles = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -51,7 +51,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.labelTotalClasses);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(107, 85);
@@ -59,17 +59,16 @@
             this.panel1.Size = new System.Drawing.Size(280, 133);
             this.panel1.TabIndex = 0;
             // 
-            // label2
+            // labelTotalClasses
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(144, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "{?}";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.labelTotalClasses.AutoSize = true;
+            this.labelTotalClasses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalClasses.ForeColor = System.Drawing.Color.White;
+            this.labelTotalClasses.Location = new System.Drawing.Point(144, 53);
+            this.labelTotalClasses.Name = "labelTotalClasses";
+            this.labelTotalClasses.Size = new System.Drawing.Size(31, 20);
+            this.labelTotalClasses.TabIndex = 2;
+            this.labelTotalClasses.Text = "{?}";
             // 
             // label1
             // 
@@ -81,7 +80,6 @@
             this.label1.Size = new System.Drawing.Size(76, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Lớp Học";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -97,7 +95,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Blue;
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.labelTotalStudents);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Location = new System.Drawing.Point(616, 85);
@@ -105,17 +103,16 @@
             this.panel2.Size = new System.Drawing.Size(280, 133);
             this.panel2.TabIndex = 3;
             // 
-            // label3
+            // labelTotalStudents
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(144, 53);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "{?}";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.labelTotalStudents.AutoSize = true;
+            this.labelTotalStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalStudents.ForeColor = System.Drawing.Color.White;
+            this.labelTotalStudents.Location = new System.Drawing.Point(144, 53);
+            this.labelTotalStudents.Name = "labelTotalStudents";
+            this.labelTotalStudents.Size = new System.Drawing.Size(31, 20);
+            this.labelTotalStudents.TabIndex = 2;
+            this.labelTotalStudents.Text = "{?}";
             // 
             // label4
             // 
@@ -142,7 +139,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.labelTotalRoles);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Location = new System.Drawing.Point(355, 349);
@@ -150,17 +147,16 @@
             this.panel3.Size = new System.Drawing.Size(280, 133);
             this.panel3.TabIndex = 3;
             // 
-            // label5
+            // labelTotalRoles
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(139, 52);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 20);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "{?}";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.labelTotalRoles.AutoSize = true;
+            this.labelTotalRoles.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalRoles.ForeColor = System.Drawing.Color.White;
+            this.labelTotalRoles.Location = new System.Drawing.Point(139, 52);
+            this.labelTotalRoles.Name = "labelTotalRoles";
+            this.labelTotalRoles.Size = new System.Drawing.Size(31, 20);
+            this.labelTotalRoles.TabIndex = 2;
+            this.labelTotalRoles.Text = "{?}";
             // 
             // label6
             // 
@@ -212,13 +208,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelTotalClasses;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelTotalStudents;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelTotalRoles;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox3;
     }

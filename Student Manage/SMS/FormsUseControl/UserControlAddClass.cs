@@ -28,20 +28,6 @@ namespace Student_Manage.SMS.FormsUseControl
             }
         }
         
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void pictureBoxSearch_MouseHover(object sender, EventArgs e)
         {
@@ -56,7 +42,7 @@ namespace Student_Manage.SMS.FormsUseControl
             textBoxNam.Clear();
             TabControlAddClass.SelectedTab = tabPageAddClass;
         }
-        public void ClearTextBox1()
+        private void ClearTextBox1()
         {
             textBoxName1.Clear();
             textBoxNu1.Clear();
@@ -89,7 +75,9 @@ namespace Student_Manage.SMS.FormsUseControl
         private void tabPageSearchClass_Enter(object sender, EventArgs e)
         {
             textBoxSearchClass.Clear();
-            //Attendance.Attendance.DisplayAndSearchAllData("SELECT * FROM Class_Table")
+            Attendance.Attendance.DisplayAndSearchAllData("SELECT * FROM Class_Table;", dataGridViewClass, sql);
+            dataGridViewClass.Columns[0].Visible = false;
+            labelCountClass.Text = dataGridViewClass.Rows.Count.ToString();
 
         }
 
@@ -171,7 +159,7 @@ namespace Student_Manage.SMS.FormsUseControl
             }
             else
             {
-                MessageBox.Show("Fisrt select row form table. ", "select row", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Fisrt select row form table. ", "Select row", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -186,7 +174,7 @@ namespace Student_Manage.SMS.FormsUseControl
                 }
                 else
                 {
-                    DialogResult dialogResult = MessageBox.Show("Are you want to delete class>?","delete class", MessageBoxButtons.YesNo , MessageBoxIcon.Question);
+                    DialogResult dialogResult = MessageBox.Show("Are you want to delete class>?","Delete class", MessageBoxButtons.YesNo , MessageBoxIcon.Question);
                     if(dialogResult == DialogResult.Yes)
                     {
                         bool check = Attendance.Attendance.DeleteClass(CID, sql);
@@ -198,8 +186,10 @@ namespace Student_Manage.SMS.FormsUseControl
             }
             else
             {
-                MessageBox.Show("Fisrt select row form table. ", "select row", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Fisrt select row form table. ", "Select row", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        
     }
 }

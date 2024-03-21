@@ -13,9 +13,9 @@ namespace Student_Manage.SMS.Forms
     public partial class FormMain : Form
     {
         public string Username, Role;
-        private string sql = @"Data Source = DESKTOP-A98QJSC;
-                            Initial Catalog = Student_Management_System;
-                          Integrated Security = True;";
+        //private string sql = @"Data Source = DESKTOP-A98QJSC;
+        //                    Initial Catalog = Student_Management_System;
+          //                Integrated Security = True;";
         public FormMain()
         {
             InitializeComponent();
@@ -77,20 +77,28 @@ namespace Student_Manage.SMS.Forms
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonDashboard);
+            userControlAddClass1.Visible = false;
             userControlDashBoard1.Count();
             userControlDashBoard1.Visible = true;
+            //userControlAddStudent1.Visible = false;
         }
 
         private void buttonAttendance_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonAttendance);
             userControlDashBoard1.Visible = false;
+            //userControlAddStudent1.Visible = false;
+            userControlAddClass1.Visible = false;
+
         }
 
         private void buttonAddClass_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonAddClass);
+            userControlAddClass1.ClearTextBox();
             userControlDashBoard1.Visible = false;
+            //userControlAddStudent1.Visible = false;
+            userControlAddClass1.Visible = true;
         }
 
         private void buttonAddStudent_Click(object sender, EventArgs e)
@@ -98,18 +106,24 @@ namespace Student_Manage.SMS.Forms
 
             MoveSidePanel(buttonAddStudent);
             userControlDashBoard1.Visible = false;
+            //userControlAddStudent1.Visible = true;
+            userControlAddClass1.Visible = false;
         }
 
         private void buttonReport_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonReport);
             userControlDashBoard1.Visible = false;
+            //userControlAddStudent1.Visible = false;
+            userControlAddClass1.Visible = false;
         }
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonRegister);
             userControlDashBoard1.Visible = false;
+            //userControlAddStudent1.Visible = false;
+            userControlAddClass1.Visible = false;
         }
 
         private void userControlDashBoard1_Load(object sender, EventArgs e)
