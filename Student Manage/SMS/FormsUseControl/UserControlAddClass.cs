@@ -127,19 +127,6 @@ namespace Student_Manage.SMS.FormsUseControl
 
         }
 
-        private void dataGridViewClass_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if(e.RowIndex != -1)
-            {
-                DataGridViewRow row = dataGridViewClass.Rows[e.RowIndex];
-                CID = row.Cells[0].Value.ToString();
-                textBoxName1.Text = row.Cells[1].Value.ToString();
-                textBoxHMStudent1.Text = row.Cells[2].Value.ToString();
-                textBoxNam1.Text = row.Cells[3].Value.ToString();
-                textBoxNu1.Text = row.Cells[4].Value.ToString();
-            }
-        }
-
         private void buttonUPClass_Click(object sender, EventArgs e)
         {
             if(CID != "")
@@ -190,6 +177,17 @@ namespace Student_Manage.SMS.FormsUseControl
             }
         }
 
-        
+        private void dataGridViewClass_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != -1)
+            {
+                DataGridViewRow row = dataGridViewClass.Rows[e.RowIndex];
+                CID = row.Cells[0].Value.ToString();
+                textBoxName1.Text = row.Cells[1].Value.ToString();
+                textBoxHMStudent1.Text = row.Cells[2].Value.ToString();
+                textBoxNam1.Text = row.Cells[3].Value.ToString();
+                textBoxNu1.Text = row.Cells[4].Value.ToString();
+            }
+        }
     }
 }

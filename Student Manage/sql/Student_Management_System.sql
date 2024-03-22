@@ -1,4 +1,5 @@
 CREATE DATABASE Student_Management_System;
+USE Student_Management_System; 
 
 CREATE TABLE User_Table
 (
@@ -17,6 +18,7 @@ CREATE TABLE User_Table
 
 INSERT INTO User_Table VALUES
 ('user','12345','+11 111 1111111', '11111-1111111-1','09/18/2023','Male','user@gmail.com','User','United State'),
+('datdepzai','1234567','+22 222 2222222', '33333-3333333-3','09/18/2023','Male','admin@gmail.com','Admin','Viet Nam'),
 ('admin','12345678','+22 222 2222222', '22222-2222222-2','09/18/2023','Male','admin@gmail.com','Admin','Viet Nam');
 
 
