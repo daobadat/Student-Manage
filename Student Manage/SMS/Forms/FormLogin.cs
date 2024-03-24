@@ -15,7 +15,8 @@ namespace Student_Manage.SMS.Forms
     public partial class FormLogin : Form
     {
         //DESKTOP-A98QJSC
-        private string sql = @"Data Source = DESKTOP-4E2MKDI\MSSQLSERVER01;
+        //DESKTOP-4E2MKDI\MSSQLSERVER01
+        private string sql = @"Data Source = DESKTOP-A98QJSC;
                              Initial Catalog = Student_Management_System;
                              Integrated Security = True;";
         public FormLogin()

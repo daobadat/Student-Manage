@@ -188,7 +188,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "UserControlDashBoard";
-            this.Size = new System.Drawing.Size(942, 477);
+            this.Size = new System.Drawing.Size(928, 473);
             this.Load += new System.EventHandler(this.UserControlDashBoard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

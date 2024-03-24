@@ -56,8 +56,8 @@
             this.labelRole = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
-            this.userControlDashBoard1 = new Student_Manage.SMS.FormsUseControl.UserControlDashBoard();
-            this.userControlAddClass1 = new Student_Manage.SMS.FormsUseControl.UserControlAddClass();
+            this.userControlAddClass2 = new Student_Manage.SMS.FormsUseControl.UserControlAddClass();
+            this.userControlDashBoard2 = new Student_Manage.SMS.FormsUseControl.UserControlDashBoard();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,7 +83,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(258, 749);
+            this.panel1.Size = new System.Drawing.Size(258, 900);
             this.panel1.TabIndex = 0;
             // 
             // buttonRegister
@@ -246,7 +246,7 @@
             this.panelBack.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBack.Location = new System.Drawing.Point(258, 0);
             this.panelBack.Name = "panelBack";
-            this.panelBack.Size = new System.Drawing.Size(1627, 165);
+            this.panelBack.Size = new System.Drawing.Size(1316, 165);
             this.panelBack.TabIndex = 1;
             // 
             // panelExpand
@@ -256,7 +256,7 @@
             this.panelExpand.Controls.Add(this.buttonLogout);
             this.panelExpand.Controls.Add(this.buttonMinimize);
             this.panelExpand.Controls.Add(this.panel3);
-            this.panelExpand.Location = new System.Drawing.Point(1037, 58);
+            this.panelExpand.Location = new System.Drawing.Point(1041, 58);
             this.panelExpand.Name = "panelExpand";
             this.panelExpand.Size = new System.Drawing.Size(200, 107);
             this.panelExpand.TabIndex = 0;
@@ -317,7 +317,7 @@
             // 
             this.pictureBoxExpand.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxExpand.Image = global::Student_Manage.Properties.Resources.icons8_drop_down_30;
-            this.pictureBoxExpand.Location = new System.Drawing.Point(1103, 29);
+            this.pictureBoxExpand.Location = new System.Drawing.Point(1107, 29);
             this.pictureBoxExpand.Name = "pictureBoxExpand";
             this.pictureBoxExpand.Size = new System.Drawing.Size(27, 24);
             this.pictureBoxExpand.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -328,7 +328,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Student_Manage.Properties.Resources.student_man_avatar_user_toga_school_university_icon_209294;
-            this.pictureBox2.Location = new System.Drawing.Point(1037, -5);
+            this.pictureBox2.Location = new System.Drawing.Point(1041, -5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(60, 58);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -345,7 +345,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelTop.Location = new System.Drawing.Point(0, 65);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1627, 100);
+            this.panelTop.Size = new System.Drawing.Size(1316, 100);
             this.panelTop.TabIndex = 0;
             // 
             // label5
@@ -393,26 +393,35 @@
             // 
             this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
             // 
-            // userControlAddClass1
+            // userControlAddClass2
             // 
-            this.userControlAddClass1.BackColor = System.Drawing.Color.White;
-            this.userControlAddClass1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlAddClass1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControlAddClass1.Location = new System.Drawing.Point(258, 165);
-            this.userControlAddClass1.Margin = new System.Windows.Forms.Padding(4);
-            this.userControlAddClass1.Name = "userControlAddClass1";
-            this.userControlAddClass1.Size = new System.Drawing.Size(1627, 735);
-            this.userControlAddClass1.TabIndex = 3;
-            this.userControlAddClass1.Visible = false;
+            this.userControlAddClass2.BackColor = System.Drawing.Color.White;
+            this.userControlAddClass2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlAddClass2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControlAddClass2.Location = new System.Drawing.Point(258, 165);
+            this.userControlAddClass2.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlAddClass2.Name = "userControlAddClass2";
+            this.userControlAddClass2.Size = new System.Drawing.Size(1316, 735);
+            this.userControlAddClass2.TabIndex = 3;
+            this.userControlAddClass2.Visible = false;
+            // 
+            // userControlDashBoard2
+            // 
+            this.userControlDashBoard2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlDashBoard2.Location = new System.Drawing.Point(258, 165);
+            this.userControlDashBoard2.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlDashBoard2.Name = "userControlDashBoard2";
+            this.userControlDashBoard2.Size = new System.Drawing.Size(1316, 735);
+            this.userControlDashBoard2.TabIndex = 2;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1885, 900);
-            this.Controls.Add(this.userControlAddClass1);
-            this.Controls.Add(this.userControlDashBoard1);
+            this.ClientSize = new System.Drawing.Size(1574, 900);
+            this.Controls.Add(this.userControlAddClass2);
+            this.Controls.Add(this.userControlDashBoard2);
             this.Controls.Add(this.panelBack);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
@@ -467,7 +476,8 @@
         private System.Windows.Forms.Button buttonReport;
         private System.Windows.Forms.Button buttonRegister;
         private System.Windows.Forms.Timer timerDateAndTime;
-        private FormsUseControl.UserControlDashBoard userControlDashBoard1;
-        private FormsUseControl.UserControlAddClass userControlAddClass1;
+        
+        private FormsUseControl.UserControlDashBoard userControlDashBoard2;
+        private FormsUseControl.UserControlAddClass userControlAddClass2;
     }
 }
