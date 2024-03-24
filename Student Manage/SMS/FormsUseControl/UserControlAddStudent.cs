@@ -14,9 +14,9 @@ namespace Student_Manage.SMS.FormsUseControl
 {
     public partial class UserControlAddStudent : UserControl
     {
-        private string sql = @"Data Source = .\SQLEXPRESS;
-                              Initial Catalog = Attendance_Management_System;
-                                Integrate Security = True ; ";
+        private string sql = @"Data Source = DESKTOP-A98QJSC;
+                          Initial Catalog = Student_Management_System;
+                           Integrated Security = True;";
         private string SID = "",gender = "";
         public UserControlAddStudent()
         {

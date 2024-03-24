@@ -31,3 +31,18 @@ CREATE TABLE Class_Table
 	Class_Female INT,
 	CONSTRAINT Class_Table_PK PRIMARY KEY (Class_ID)
 );
+
+CREATE TABLE Student_Table
+(
+	Student_ID INT IDENTITY(1,1),
+	Student_Name VARCHAR(150),
+	Student_Reg VARCHAR(50) UNIQUE,
+	Student_Gender VARCHAR(10),
+	Class_ID INT,
+	Student_Phone INT,
+	Student_BD VARCHAR(50),
+	Student_MSSV INT,
+	Student_Email VARCHAR(50),
+	CONSTRAINT Student_Table_PK PRIMARY KEY (Student_ID),
+	CONSTRAINT Student_Table_FK FOREIGN KEY (Class_ID) REFERENCES Class_Table (Class_ID) ON DELETE CASCADE
+);

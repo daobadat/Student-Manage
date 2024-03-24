@@ -56,8 +56,8 @@
             this.labelRole = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
-            this.userControlAddClass1 = new Student_Manage.SMS.FormsUseControl.UserControlAddClass();
             this.userControlDashBoard1 = new Student_Manage.SMS.FormsUseControl.UserControlDashBoard();
+            this.userControlAddClass1 = new Student_Manage.SMS.FormsUseControl.UserControlAddClass();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,7 +83,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(258, 900);
+            this.panel1.Size = new System.Drawing.Size(258, 857);
             this.panel1.TabIndex = 0;
             // 
             // buttonRegister
@@ -194,7 +194,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 180);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(8, 720);
+            this.panel4.Size = new System.Drawing.Size(8, 677);
             this.panel4.TabIndex = 1;
             // 
             // panelSlide
@@ -246,7 +246,7 @@
             this.panelBack.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBack.Location = new System.Drawing.Point(258, 0);
             this.panelBack.Name = "panelBack";
-            this.panelBack.Size = new System.Drawing.Size(1627, 165);
+            this.panelBack.Size = new System.Drawing.Size(1289, 165);
             this.panelBack.TabIndex = 1;
             // 
             // panelExpand
@@ -256,7 +256,7 @@
             this.panelExpand.Controls.Add(this.buttonLogout);
             this.panelExpand.Controls.Add(this.buttonMinimize);
             this.panelExpand.Controls.Add(this.panel3);
-            this.panelExpand.Location = new System.Drawing.Point(1414, 64);
+            this.panelExpand.Location = new System.Drawing.Point(1037, 58);
             this.panelExpand.Name = "panelExpand";
             this.panelExpand.Size = new System.Drawing.Size(200, 107);
             this.panelExpand.TabIndex = 0;
@@ -317,7 +317,7 @@
             // 
             this.pictureBoxExpand.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxExpand.Image = global::Student_Manage.Properties.Resources.icons8_drop_down_30;
-            this.pictureBoxExpand.Location = new System.Drawing.Point(1480, 35);
+            this.pictureBoxExpand.Location = new System.Drawing.Point(1103, 29);
             this.pictureBoxExpand.Name = "pictureBoxExpand";
             this.pictureBoxExpand.Size = new System.Drawing.Size(27, 24);
             this.pictureBoxExpand.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -328,7 +328,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Student_Manage.Properties.Resources.student_man_avatar_user_toga_school_university_icon_209294;
-            this.pictureBox2.Location = new System.Drawing.Point(1414, 1);
+            this.pictureBox2.Location = new System.Drawing.Point(1037, -5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(60, 58);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -345,7 +345,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelTop.Location = new System.Drawing.Point(0, 65);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1627, 100);
+            this.panelTop.Size = new System.Drawing.Size(1289, 100);
             this.panelTop.TabIndex = 0;
             // 
             // label5
@@ -393,6 +393,15 @@
             // 
             this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
             // 
+            // userControlDashBoard1
+            // 
+            this.userControlDashBoard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlDashBoard1.Location = new System.Drawing.Point(258, 165);
+            this.userControlDashBoard1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userControlDashBoard1.Name = "userControlDashBoard1";
+            this.userControlDashBoard1.Size = new System.Drawing.Size(1289, 692);
+            this.userControlDashBoard1.TabIndex = 2;
+            // 
             // userControlAddClass1
             // 
             this.userControlAddClass1.BackColor = System.Drawing.Color.White;
@@ -401,25 +410,16 @@
             this.userControlAddClass1.Location = new System.Drawing.Point(258, 165);
             this.userControlAddClass1.Margin = new System.Windows.Forms.Padding(4);
             this.userControlAddClass1.Name = "userControlAddClass1";
-            this.userControlAddClass1.Size = new System.Drawing.Size(1627, 735);
+            this.userControlAddClass1.Size = new System.Drawing.Size(1289, 692);
             this.userControlAddClass1.TabIndex = 3;
             this.userControlAddClass1.Visible = false;
-            // 
-            // userControlDashBoard1
-            // 
-            this.userControlDashBoard1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlDashBoard1.Location = new System.Drawing.Point(258, 165);
-            this.userControlDashBoard1.Margin = new System.Windows.Forms.Padding(4);
-            this.userControlDashBoard1.Name = "userControlDashBoard1";
-            this.userControlDashBoard1.Size = new System.Drawing.Size(1627, 735);
-            this.userControlDashBoard1.TabIndex = 2;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1885, 900);
+            this.ClientSize = new System.Drawing.Size(1547, 857);
             this.Controls.Add(this.userControlAddClass1);
             this.Controls.Add(this.userControlDashBoard1);
             this.Controls.Add(this.panelBack);

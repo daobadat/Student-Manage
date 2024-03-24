@@ -77,6 +77,7 @@ namespace Student_Manage.SMS.Forms
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonDashboard);
+            
             userControlAddClass1.Visible = false;
             userControlDashBoard1.Count();
             userControlDashBoard1.Visible = true;

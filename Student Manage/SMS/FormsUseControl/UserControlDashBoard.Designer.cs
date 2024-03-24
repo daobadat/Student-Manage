@@ -54,9 +54,9 @@
             this.panel1.Controls.Add(this.labelTotalClasses);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(107, 85);
+            this.panel1.Location = new System.Drawing.Point(48, 44);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(280, 133);
+            this.panel1.Size = new System.Drawing.Size(269, 121);
             this.panel1.TabIndex = 0;
             // 
             // labelTotalClasses
@@ -98,9 +98,9 @@
             this.panel2.Controls.Add(this.labelTotalStudents);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(616, 85);
+            this.panel2.Location = new System.Drawing.Point(557, 44);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(280, 133);
+            this.panel2.Size = new System.Drawing.Size(269, 121);
             this.panel2.TabIndex = 3;
             // 
             // labelTotalStudents
@@ -142,9 +142,9 @@
             this.panel3.Controls.Add(this.labelTotalRoles);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(355, 349);
+            this.panel3.Location = new System.Drawing.Point(303, 244);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(280, 133);
+            this.panel3.Size = new System.Drawing.Size(269, 121);
             this.panel3.TabIndex = 3;
             // 
             // labelTotalRoles
@@ -188,7 +188,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "UserControlDashBoard";
-            this.Size = new System.Drawing.Size(1057, 620);
+            this.Size = new System.Drawing.Size(942, 477);
             this.Load += new System.EventHandler(this.UserControlDashBoard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
