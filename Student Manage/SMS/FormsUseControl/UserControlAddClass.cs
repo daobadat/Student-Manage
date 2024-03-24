@@ -12,7 +12,8 @@ namespace Student_Manage.SMS.FormsUseControl
 {
     public partial class UserControlAddClass : UserControl
     {
-        private string sql = @"Data Source = DESKTOP-A98QJSC;
+        //DESKTOP-A98QJSC
+        private string sql = @"Data Source = DESKTOP-4E2MKDI\MSSQLSERVER01;
                              Initial Catalog = Student_Management_System;
                              Integrated Security = True;";
         private string CID = "";

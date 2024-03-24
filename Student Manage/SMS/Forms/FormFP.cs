@@ -14,7 +14,8 @@ namespace Student_Manage.SMS.Forms
 {
     public partial class FormForgotPassword : Form
     {
-        private string sql = @"Data Source = DESKTOP-A98QJSC;
+        //DESKTOP-A98QJSC
+        private string sql = @"Data Source = DESKTOP-4E2MKDI\MSSQLSERVER01;
                              Initial Catalog = Student_Management_System;
                              Integrated Security = True;";
         public FormForgotPassword()

@@ -56,8 +56,8 @@
             this.labelRole = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
-            this.userControlAddClass1 = new Student_Manage.SMS.FormsUseControl.UserControlAddClass();
             this.userControlDashBoard1 = new Student_Manage.SMS.FormsUseControl.UserControlDashBoard();
+            this.userControlAddClass1 = new Student_Manage.SMS.FormsUseControl.UserControlAddClass();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,7 +83,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(258, 900);
+            this.panel1.Size = new System.Drawing.Size(258, 749);
             this.panel1.TabIndex = 0;
             // 
             // buttonRegister
@@ -194,7 +194,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 180);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(8, 720);
+            this.panel4.Size = new System.Drawing.Size(8, 569);
             this.panel4.TabIndex = 1;
             // 
             // panelSlide
@@ -246,7 +246,7 @@
             this.panelBack.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBack.Location = new System.Drawing.Point(258, 0);
             this.panelBack.Name = "panelBack";
-            this.panelBack.Size = new System.Drawing.Size(1627, 165);
+            this.panelBack.Size = new System.Drawing.Size(1112, 165);
             this.panelBack.TabIndex = 1;
             // 
             // panelExpand
@@ -345,7 +345,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelTop.Location = new System.Drawing.Point(0, 65);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1627, 100);
+            this.panelTop.Size = new System.Drawing.Size(1112, 100);
             this.panelTop.TabIndex = 0;
             // 
             // label5
@@ -393,6 +393,15 @@
             // 
             this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
             // 
+            // userControlDashBoard1
+            // 
+            this.userControlDashBoard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlDashBoard1.Location = new System.Drawing.Point(258, 165);
+            this.userControlDashBoard1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.userControlDashBoard1.Name = "userControlDashBoard1";
+            this.userControlDashBoard1.Size = new System.Drawing.Size(1112, 584);
+            this.userControlDashBoard1.TabIndex = 2;
+            // 
             // userControlAddClass1
             // 
             this.userControlAddClass1.BackColor = System.Drawing.Color.White;
@@ -401,25 +410,16 @@
             this.userControlAddClass1.Location = new System.Drawing.Point(258, 165);
             this.userControlAddClass1.Margin = new System.Windows.Forms.Padding(4);
             this.userControlAddClass1.Name = "userControlAddClass1";
-            this.userControlAddClass1.Size = new System.Drawing.Size(1627, 735);
+            this.userControlAddClass1.Size = new System.Drawing.Size(1112, 584);
             this.userControlAddClass1.TabIndex = 3;
             this.userControlAddClass1.Visible = false;
-            // 
-            // userControlDashBoard1
-            // 
-            this.userControlDashBoard1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlDashBoard1.Location = new System.Drawing.Point(258, 165);
-            this.userControlDashBoard1.Margin = new System.Windows.Forms.Padding(4);
-            this.userControlDashBoard1.Name = "userControlDashBoard1";
-            this.userControlDashBoard1.Size = new System.Drawing.Size(1627, 735);
-            this.userControlDashBoard1.TabIndex = 2;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1885, 900);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.userControlAddClass1);
             this.Controls.Add(this.userControlDashBoard1);
             this.Controls.Add(this.panelBack);

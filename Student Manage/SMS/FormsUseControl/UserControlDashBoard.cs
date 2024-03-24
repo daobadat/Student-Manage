@@ -13,9 +13,10 @@ namespace Student_Manage.SMS.FormsUseControl
 {
     public partial class UserControlDashBoard : UserControl
     {
-        private string sql = @"Data Source = DESKTOP-A98QJSC;
-                            Initial Catalog = Student_Management_System;
-                          Integrated Security = True;";
+        //DESKTOP-A98QJSC
+        private string sql = @"Data Source = DESKTOP-4E2MKDI\MSSQLSERVER01;
+                             Initial Catalog = Student_Management_System;
+                             Integrated Security = True;";
         public UserControlDashBoard()
         {
             InitializeComponent();
