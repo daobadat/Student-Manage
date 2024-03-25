@@ -31,6 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.TabControlAddStudent = new System.Windows.Forms.TabControl();
             this.tabPageAddStudent = new System.Windows.Forms.TabPage();
+            this.pictureBoxErrorDate = new System.Windows.Forms.PictureBox();
+            this.pictureBoxErrorEmail = new System.Windows.Forms.PictureBox();
+            this.pictureBoxErrorPhone = new System.Windows.Forms.PictureBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.maskedTextBoxDate = new System.Windows.Forms.MaskedTextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.maskedTextBoxPhone = new System.Windows.Forms.MaskedTextBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.radioButtonFemale = new System.Windows.Forms.RadioButton();
             this.radioButtonMale = new System.Windows.Forms.RadioButton();
             this.comboBoxClass = new System.Windows.Forms.ComboBox();
@@ -53,17 +65,24 @@
             this.labelCountStudent = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridViewStudent = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel5 = new System.Windows.Forms.Panel();
             this.textBoxSearchStudent = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBoxSearch = new System.Windows.Forms.PictureBox();
             this.tabPageUPStudentAndDelete = new System.Windows.Forms.TabPage();
+            this.pictureBoxErrorDate1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxErrorEmail1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxErrorPhone1 = new System.Windows.Forms.PictureBox();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.textBoxEmail1 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.maskedTextBoxDate1 = new System.Windows.Forms.MaskedTextBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.maskedTextBoxPhone1 = new System.Windows.Forms.MaskedTextBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
             this.radioButtonFemale1 = new System.Windows.Forms.RadioButton();
             this.radioButtonMale1 = new System.Windows.Forms.RadioButton();
             this.comboBoxClass1 = new System.Windows.Forms.ComboBox();
@@ -81,12 +100,26 @@
             this.buttonUPClass = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TabControlAddStudent.SuspendLayout();
             this.tabPageAddStudent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxErrorDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxErrorEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxErrorPhone)).BeginInit();
             this.tabPageSearchStudent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).BeginInit();
             this.tabPageUPStudentAndDelete.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxErrorDate1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxErrorEmail1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxErrorPhone1)).BeginInit();
             this.SuspendLayout();
             // 
             // TabControlAddStudent
@@ -104,6 +137,19 @@
             // 
             // tabPageAddStudent
             // 
+            this.tabPageAddStudent.BackColor = System.Drawing.Color.White;
+            this.tabPageAddStudent.Controls.Add(this.pictureBoxErrorDate);
+            this.tabPageAddStudent.Controls.Add(this.pictureBoxErrorEmail);
+            this.tabPageAddStudent.Controls.Add(this.pictureBoxErrorPhone);
+            this.tabPageAddStudent.Controls.Add(this.panel11);
+            this.tabPageAddStudent.Controls.Add(this.textBoxEmail);
+            this.tabPageAddStudent.Controls.Add(this.label17);
+            this.tabPageAddStudent.Controls.Add(this.maskedTextBoxDate);
+            this.tabPageAddStudent.Controls.Add(this.panel9);
+            this.tabPageAddStudent.Controls.Add(this.label15);
+            this.tabPageAddStudent.Controls.Add(this.maskedTextBoxPhone);
+            this.tabPageAddStudent.Controls.Add(this.panel10);
+            this.tabPageAddStudent.Controls.Add(this.label16);
             this.tabPageAddStudent.Controls.Add(this.radioButtonFemale);
             this.tabPageAddStudent.Controls.Add(this.radioButtonMale);
             this.tabPageAddStudent.Controls.Add(this.comboBoxClass);
@@ -125,15 +171,146 @@
             this.tabPageAddStudent.Size = new System.Drawing.Size(1202, 613);
             this.tabPageAddStudent.TabIndex = 0;
             this.tabPageAddStudent.Text = "Thêm Sinh Viên";
-            this.tabPageAddStudent.UseVisualStyleBackColor = true;
             this.tabPageAddStudent.Enter += new System.EventHandler(this.tabPageAddStudent_Enter);
             this.tabPageAddStudent.Leave += new System.EventHandler(this.tabPageAddStudent_Leave);
+            // 
+            // pictureBoxErrorDate
+            // 
+            this.pictureBoxErrorDate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxErrorDate.Image = global::Student_Manage.Properties.Resources._6939131;
+            this.pictureBoxErrorDate.InitialImage = null;
+            this.pictureBoxErrorDate.Location = new System.Drawing.Point(407, 365);
+            this.pictureBoxErrorDate.Name = "pictureBoxErrorDate";
+            this.pictureBoxErrorDate.Size = new System.Drawing.Size(28, 22);
+            this.pictureBoxErrorDate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxErrorDate.TabIndex = 23;
+            this.pictureBoxErrorDate.TabStop = false;
+            this.pictureBoxErrorDate.Visible = false;
+            // 
+            // pictureBoxErrorEmail
+            // 
+            this.pictureBoxErrorEmail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxErrorEmail.Image = global::Student_Manage.Properties.Resources._6939131;
+            this.pictureBoxErrorEmail.InitialImage = null;
+            this.pictureBoxErrorEmail.Location = new System.Drawing.Point(847, 189);
+            this.pictureBoxErrorEmail.Name = "pictureBoxErrorEmail";
+            this.pictureBoxErrorEmail.Size = new System.Drawing.Size(28, 22);
+            this.pictureBoxErrorEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxErrorEmail.TabIndex = 22;
+            this.pictureBoxErrorEmail.TabStop = false;
+            this.pictureBoxErrorEmail.Visible = false;
+            // 
+            // pictureBoxErrorPhone
+            // 
+            this.pictureBoxErrorPhone.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxErrorPhone.Image = global::Student_Manage.Properties.Resources._6939131;
+            this.pictureBoxErrorPhone.InitialImage = null;
+            this.pictureBoxErrorPhone.Location = new System.Drawing.Point(407, 274);
+            this.pictureBoxErrorPhone.Name = "pictureBoxErrorPhone";
+            this.pictureBoxErrorPhone.Size = new System.Drawing.Size(28, 22);
+            this.pictureBoxErrorPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxErrorPhone.TabIndex = 21;
+            this.pictureBoxErrorPhone.TabStop = false;
+            this.pictureBoxErrorPhone.Visible = false;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.LightGray;
+            this.panel11.Location = new System.Drawing.Point(564, 222);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(277, 2);
+            this.panel11.TabIndex = 18;
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxEmail.Location = new System.Drawing.Point(564, 189);
+            this.textBoxEmail.Multiline = true;
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(277, 25);
+            this.textBoxEmail.TabIndex = 20;
+            this.textBoxEmail.Enter += new System.EventHandler(this.textBoxEmail_Enter);
+            this.textBoxEmail.Leave += new System.EventHandler(this.textBoxEmail_Leave);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(561, 170);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(58, 16);
+            this.label17.TabIndex = 19;
+            this.label17.Text = "Email : ";
+            // 
+            // maskedTextBoxDate
+            // 
+            this.maskedTextBoxDate.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.maskedTextBoxDate.Location = new System.Drawing.Point(124, 365);
+            this.maskedTextBoxDate.Mask = "00/00/0000";
+            this.maskedTextBoxDate.Name = "maskedTextBoxDate";
+            this.maskedTextBoxDate.Size = new System.Drawing.Size(277, 22);
+            this.maskedTextBoxDate.TabIndex = 17;
+            this.maskedTextBoxDate.Text = "00000000";
+            this.maskedTextBoxDate.Enter += new System.EventHandler(this.maskedTextBoxDate_Enter);
+            this.maskedTextBoxDate.Leave += new System.EventHandler(this.maskedTextBoxDate_Leave);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.LightGray;
+            this.panel9.Location = new System.Drawing.Point(124, 393);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(277, 2);
+            this.panel9.TabIndex = 15;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(121, 341);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(82, 16);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "Sinh năm : ";
+            // 
+            // maskedTextBoxPhone
+            // 
+            this.maskedTextBoxPhone.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.maskedTextBoxPhone.Location = new System.Drawing.Point(124, 274);
+            this.maskedTextBoxPhone.Mask = "+00 000 0000000";
+            this.maskedTextBoxPhone.Name = "maskedTextBoxPhone";
+            this.maskedTextBoxPhone.Size = new System.Drawing.Size(277, 22);
+            this.maskedTextBoxPhone.TabIndex = 14;
+            this.maskedTextBoxPhone.Text = "000000000000";
+            this.maskedTextBoxPhone.Enter += new System.EventHandler(this.maskedTextBoxPhone_Enter);
+            this.maskedTextBoxPhone.Leave += new System.EventHandler(this.maskedTextBoxPhone_Leave);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.LightGray;
+            this.panel10.Location = new System.Drawing.Point(124, 302);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(277, 2);
+            this.panel10.TabIndex = 11;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(121, 250);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(117, 16);
+            this.label16.TabIndex = 12;
+            this.label16.Text = "Số Điện Thoại : ";
             // 
             // radioButtonFemale
             // 
             this.radioButtonFemale.AutoSize = true;
             this.radioButtonFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.radioButtonFemale.Location = new System.Drawing.Point(993, 118);
+            this.radioButtonFemale.Location = new System.Drawing.Point(648, 319);
             this.radioButtonFemale.Name = "radioButtonFemale";
             this.radioButtonFemale.Size = new System.Drawing.Size(44, 21);
             this.radioButtonFemale.TabIndex = 7;
@@ -145,7 +322,7 @@
             // 
             this.radioButtonMale.AutoSize = true;
             this.radioButtonMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.radioButtonMale.Location = new System.Drawing.Point(993, 83);
+            this.radioButtonMale.Location = new System.Drawing.Point(648, 284);
             this.radioButtonMale.Name = "radioButtonMale";
             this.radioButtonMale.Size = new System.Drawing.Size(55, 21);
             this.radioButtonMale.TabIndex = 6;
@@ -161,7 +338,7 @@
             this.comboBoxClass.FormattingEnabled = true;
             this.comboBoxClass.Items.AddRange(new object[] {
             "--SELECT--"});
-            this.comboBoxClass.Location = new System.Drawing.Point(124, 197);
+            this.comboBoxClass.Location = new System.Drawing.Point(124, 192);
             this.comboBoxClass.Name = "comboBoxClass";
             this.comboBoxClass.Size = new System.Drawing.Size(277, 24);
             this.comboBoxClass.TabIndex = 5;
@@ -222,16 +399,16 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(561, 82);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 16);
+            this.label3.Size = new System.Drawing.Size(132, 16);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Số Đăng Kí ?";
+            this.label3.Text = "Mã Số Sinh Viên ?";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(906, 101);
+            this.label5.Location = new System.Drawing.Point(561, 302);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 16);
             this.label5.TabIndex = 0;
@@ -292,6 +469,7 @@
             // 
             // tabPageSearchStudent
             // 
+            this.tabPageSearchStudent.BackColor = System.Drawing.Color.White;
             this.tabPageSearchStudent.Controls.Add(this.comboBoxSearchBy);
             this.tabPageSearchStudent.Controls.Add(this.panel4);
             this.tabPageSearchStudent.Controls.Add(this.label9);
@@ -309,7 +487,6 @@
             this.tabPageSearchStudent.Size = new System.Drawing.Size(1202, 613);
             this.tabPageSearchStudent.TabIndex = 1;
             this.tabPageSearchStudent.Text = "Tìm Sinh Viên";
-            this.tabPageSearchStudent.UseVisualStyleBackColor = true;
             this.tabPageSearchStudent.Enter += new System.EventHandler(this.tabPageSearchStudent_Enter);
             // 
             // comboBoxSearchBy
@@ -377,6 +554,8 @@
             this.dataGridViewStudent.AllowUserToDeleteRows = false;
             this.dataGridViewStudent.AllowUserToResizeColumns = false;
             this.dataGridViewStudent.AllowUserToResizeRows = false;
+            this.dataGridViewStudent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewStudent.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewStudent.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewStudent.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -387,7 +566,10 @@
             this.Column2,
             this.Column3,
             this.Column4,
-            this.Column5});
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
             this.dataGridViewStudent.Location = new System.Drawing.Point(25, 163);
             this.dataGridViewStudent.Name = "dataGridViewStudent";
             this.dataGridViewStudent.ReadOnly = true;
@@ -395,44 +577,9 @@
             this.dataGridViewStudent.ShowCellErrors = false;
             this.dataGridViewStudent.ShowEditingIcon = false;
             this.dataGridViewStudent.ShowRowErrors = false;
-            this.dataGridViewStudent.Size = new System.Drawing.Size(912, 303);
+            this.dataGridViewStudent.Size = new System.Drawing.Size(1137, 303);
             this.dataGridViewStudent.TabIndex = 9;
             this.dataGridViewStudent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStudent_CellClick);
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Student_ID";
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Student_Name";
-            this.Column2.HeaderText = "Tên Sinh Viên";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Student_RegNo";
-            this.Column3.HeaderText = "Số Đăng Kí ?";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Class_Name";
-            this.Column4.HeaderText = "Class";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Student_Gender";
-            this.Column5.HeaderText = "Giới Tính";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
             // 
             // panel5
             // 
@@ -489,6 +636,19 @@
             // 
             // tabPageUPStudentAndDelete
             // 
+            this.tabPageUPStudentAndDelete.BackColor = System.Drawing.Color.White;
+            this.tabPageUPStudentAndDelete.Controls.Add(this.pictureBoxErrorDate1);
+            this.tabPageUPStudentAndDelete.Controls.Add(this.pictureBoxErrorEmail1);
+            this.tabPageUPStudentAndDelete.Controls.Add(this.pictureBoxErrorPhone1);
+            this.tabPageUPStudentAndDelete.Controls.Add(this.panel14);
+            this.tabPageUPStudentAndDelete.Controls.Add(this.textBoxEmail1);
+            this.tabPageUPStudentAndDelete.Controls.Add(this.label20);
+            this.tabPageUPStudentAndDelete.Controls.Add(this.maskedTextBoxDate1);
+            this.tabPageUPStudentAndDelete.Controls.Add(this.panel12);
+            this.tabPageUPStudentAndDelete.Controls.Add(this.label18);
+            this.tabPageUPStudentAndDelete.Controls.Add(this.maskedTextBoxPhone1);
+            this.tabPageUPStudentAndDelete.Controls.Add(this.panel13);
+            this.tabPageUPStudentAndDelete.Controls.Add(this.label19);
             this.tabPageUPStudentAndDelete.Controls.Add(this.radioButtonFemale1);
             this.tabPageUPStudentAndDelete.Controls.Add(this.radioButtonMale1);
             this.tabPageUPStudentAndDelete.Controls.Add(this.comboBoxClass1);
@@ -511,14 +671,145 @@
             this.tabPageUPStudentAndDelete.Size = new System.Drawing.Size(1202, 613);
             this.tabPageUPStudentAndDelete.TabIndex = 2;
             this.tabPageUPStudentAndDelete.Text = "Cập Nhật Và Xóa Sinh Viên";
-            this.tabPageUPStudentAndDelete.UseVisualStyleBackColor = true;
             this.tabPageUPStudentAndDelete.Leave += new System.EventHandler(this.tabPageUPStudentAndDelete_Leave);
+            // 
+            // pictureBoxErrorDate1
+            // 
+            this.pictureBoxErrorDate1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxErrorDate1.Image = global::Student_Manage.Properties.Resources._6939131;
+            this.pictureBoxErrorDate1.InitialImage = null;
+            this.pictureBoxErrorDate1.Location = new System.Drawing.Point(389, 404);
+            this.pictureBoxErrorDate1.Name = "pictureBoxErrorDate1";
+            this.pictureBoxErrorDate1.Size = new System.Drawing.Size(28, 22);
+            this.pictureBoxErrorDate1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxErrorDate1.TabIndex = 44;
+            this.pictureBoxErrorDate1.TabStop = false;
+            this.pictureBoxErrorDate1.Visible = false;
+            // 
+            // pictureBoxErrorEmail1
+            // 
+            this.pictureBoxErrorEmail1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxErrorEmail1.Image = global::Student_Manage.Properties.Resources._6939131;
+            this.pictureBoxErrorEmail1.InitialImage = null;
+            this.pictureBoxErrorEmail1.Location = new System.Drawing.Point(829, 234);
+            this.pictureBoxErrorEmail1.Name = "pictureBoxErrorEmail1";
+            this.pictureBoxErrorEmail1.Size = new System.Drawing.Size(28, 22);
+            this.pictureBoxErrorEmail1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxErrorEmail1.TabIndex = 43;
+            this.pictureBoxErrorEmail1.TabStop = false;
+            this.pictureBoxErrorEmail1.Visible = false;
+            // 
+            // pictureBoxErrorPhone1
+            // 
+            this.pictureBoxErrorPhone1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxErrorPhone1.Image = global::Student_Manage.Properties.Resources._6939131;
+            this.pictureBoxErrorPhone1.InitialImage = null;
+            this.pictureBoxErrorPhone1.Location = new System.Drawing.Point(389, 313);
+            this.pictureBoxErrorPhone1.Name = "pictureBoxErrorPhone1";
+            this.pictureBoxErrorPhone1.Size = new System.Drawing.Size(28, 22);
+            this.pictureBoxErrorPhone1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxErrorPhone1.TabIndex = 42;
+            this.pictureBoxErrorPhone1.TabStop = false;
+            this.pictureBoxErrorPhone1.Visible = false;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.LightGray;
+            this.panel14.Location = new System.Drawing.Point(546, 264);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(277, 2);
+            this.panel14.TabIndex = 39;
+            // 
+            // textBoxEmail1
+            // 
+            this.textBoxEmail1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxEmail1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxEmail1.Location = new System.Drawing.Point(546, 231);
+            this.textBoxEmail1.Multiline = true;
+            this.textBoxEmail1.Name = "textBoxEmail1";
+            this.textBoxEmail1.Size = new System.Drawing.Size(277, 25);
+            this.textBoxEmail1.TabIndex = 41;
+            this.textBoxEmail1.Enter += new System.EventHandler(this.textBoxEmail1_Enter);
+            this.textBoxEmail1.Leave += new System.EventHandler(this.textBoxEmail1_Leave);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(543, 212);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(58, 16);
+            this.label20.TabIndex = 40;
+            this.label20.Text = "Email : ";
+            // 
+            // maskedTextBoxDate1
+            // 
+            this.maskedTextBoxDate1.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.maskedTextBoxDate1.Location = new System.Drawing.Point(106, 404);
+            this.maskedTextBoxDate1.Mask = "00/00/0000";
+            this.maskedTextBoxDate1.Name = "maskedTextBoxDate1";
+            this.maskedTextBoxDate1.Size = new System.Drawing.Size(277, 22);
+            this.maskedTextBoxDate1.TabIndex = 38;
+            this.maskedTextBoxDate1.Text = "00000000";
+            this.maskedTextBoxDate1.Enter += new System.EventHandler(this.maskedTextBoxDate1_Enter);
+            this.maskedTextBoxDate1.Leave += new System.EventHandler(this.maskedTextBoxDate1_Leave);
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.LightGray;
+            this.panel12.Location = new System.Drawing.Point(106, 432);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(277, 2);
+            this.panel12.TabIndex = 36;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(103, 380);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(82, 16);
+            this.label18.TabIndex = 37;
+            this.label18.Text = "Sinh năm : ";
+            // 
+            // maskedTextBoxPhone1
+            // 
+            this.maskedTextBoxPhone1.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.maskedTextBoxPhone1.Location = new System.Drawing.Point(106, 313);
+            this.maskedTextBoxPhone1.Mask = "+00 000 0000000";
+            this.maskedTextBoxPhone1.Name = "maskedTextBoxPhone1";
+            this.maskedTextBoxPhone1.Size = new System.Drawing.Size(277, 22);
+            this.maskedTextBoxPhone1.TabIndex = 35;
+            this.maskedTextBoxPhone1.Text = "000000000000";
+            this.maskedTextBoxPhone1.Enter += new System.EventHandler(this.maskedTextBoxPhone1_Enter);
+            this.maskedTextBoxPhone1.Leave += new System.EventHandler(this.maskedTextBoxPhone1_Leave);
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.LightGray;
+            this.panel13.Location = new System.Drawing.Point(106, 341);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(277, 2);
+            this.panel13.TabIndex = 33;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(103, 289);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(117, 16);
+            this.label19.TabIndex = 34;
+            this.label19.Text = "Số Điện Thoại : ";
             // 
             // radioButtonFemale1
             // 
             this.radioButtonFemale1.AutoSize = true;
             this.radioButtonFemale1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.radioButtonFemale1.Location = new System.Drawing.Point(598, 264);
+            this.radioButtonFemale1.Location = new System.Drawing.Point(630, 330);
             this.radioButtonFemale1.Name = "radioButtonFemale1";
             this.radioButtonFemale1.Size = new System.Drawing.Size(44, 21);
             this.radioButtonFemale1.TabIndex = 32;
@@ -530,7 +821,7 @@
             // 
             this.radioButtonMale1.AutoSize = true;
             this.radioButtonMale1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.radioButtonMale1.Location = new System.Drawing.Point(598, 229);
+            this.radioButtonMale1.Location = new System.Drawing.Point(630, 295);
             this.radioButtonMale1.Name = "radioButtonMale1";
             this.radioButtonMale1.Size = new System.Drawing.Size(55, 21);
             this.radioButtonMale1.TabIndex = 31;
@@ -601,7 +892,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(511, 247);
+            this.label11.Location = new System.Drawing.Point(543, 313);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(81, 16);
             this.label11.TabIndex = 21;
@@ -656,7 +947,7 @@
             this.buttonDelete.FlatAppearance.BorderSize = 0;
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonDelete.Location = new System.Drawing.Point(262, 306);
+            this.buttonDelete.Location = new System.Drawing.Point(262, 489);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(121, 44);
             this.buttonDelete.TabIndex = 19;
@@ -671,7 +962,7 @@
             this.buttonUPClass.FlatAppearance.BorderSize = 0;
             this.buttonUPClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUPClass.ForeColor = System.Drawing.Color.White;
-            this.buttonUPClass.Location = new System.Drawing.Point(106, 306);
+            this.buttonUPClass.Location = new System.Drawing.Point(106, 489);
             this.buttonUPClass.Name = "buttonUPClass";
             this.buttonUPClass.Size = new System.Drawing.Size(121, 44);
             this.buttonUPClass.TabIndex = 18;
@@ -690,6 +981,62 @@
             this.label14.TabIndex = 5;
             this.label14.Text = "Cập nhật Và Xóa Sinh Viên : ";
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Student_ID";
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Student_Name";
+            this.Column2.HeaderText = "Tên Sinh Viên";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Student_RegNo";
+            this.Column3.HeaderText = "Mã Số Sinh Viên?";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Class_Name";
+            this.Column4.HeaderText = "Lớp Học";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Student_Gender";
+            this.Column5.HeaderText = "Giới Tính";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Student_Phone";
+            this.Column6.HeaderText = "Số Điện Thoại ";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Student_BD";
+            this.Column7.HeaderText = "Năm Sinh";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "Student_Email";
+            this.Column8.HeaderText = "Email";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
             // UserControlAddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -703,12 +1050,18 @@
             this.TabControlAddStudent.ResumeLayout(false);
             this.tabPageAddStudent.ResumeLayout(false);
             this.tabPageAddStudent.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxErrorDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxErrorEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxErrorPhone)).EndInit();
             this.tabPageSearchStudent.ResumeLayout(false);
             this.tabPageSearchStudent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).EndInit();
             this.tabPageUPStudentAndDelete.ResumeLayout(false);
             this.tabPageUPStudentAndDelete.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxErrorDate1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxErrorEmail1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxErrorPhone1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -762,10 +1115,37 @@
         private System.Windows.Forms.TextBox textBoxName1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxPhone;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxDate;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.TextBox textBoxEmail1;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxDate1;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxPhone1;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.PictureBox pictureBoxErrorDate;
+        private System.Windows.Forms.PictureBox pictureBoxErrorEmail;
+        private System.Windows.Forms.PictureBox pictureBoxErrorPhone;
+        private System.Windows.Forms.PictureBox pictureBoxErrorDate1;
+        private System.Windows.Forms.PictureBox pictureBoxErrorEmail1;
+        private System.Windows.Forms.PictureBox pictureBoxErrorPhone1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
     }
 }

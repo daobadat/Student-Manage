@@ -81,14 +81,14 @@ namespace Student_Manage.SMS.Forms
             userControlAddClass2.Visible = false;
             userControlDashBoard2.Count();
             userControlDashBoard2.Visible = true;
-            //userControlAddStudent1.Visible = false;
+            userControlAddStudent1.Visible = false;
         }
 
         private void buttonAttendance_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonAttendance);
             userControlDashBoard2.Visible = false;
-            //userControlAddStudent1.Visible = false;
+            userControlAddStudent1.Visible = false;
             userControlAddClass2.Visible = false;
 
         }
@@ -98,7 +98,7 @@ namespace Student_Manage.SMS.Forms
             MoveSidePanel(buttonAddClass);
             userControlAddClass2.ClearTextBox();
             userControlDashBoard2.Visible = false;
-            //userControlAddStudent1.Visible = false;
+            userControlAddStudent1.Visible = false;
             userControlAddClass2.Visible = true;
         }
 
@@ -107,7 +107,7 @@ namespace Student_Manage.SMS.Forms
 
             MoveSidePanel(buttonAddStudent);
             userControlDashBoard2.Visible = false;
-            //userControlAddStudent1.Visible = true;
+            userControlAddStudent1.Visible = true;
             userControlAddClass2.Visible = false;
         }
 
@@ -115,7 +115,7 @@ namespace Student_Manage.SMS.Forms
         {
             MoveSidePanel(buttonReport);
             userControlDashBoard2.Visible = false;
-            //userControlAddStudent1.Visible = false;
+            userControlAddStudent1.Visible = false;
             userControlAddClass2.Visible = false;
         }
 
@@ -123,7 +123,7 @@ namespace Student_Manage.SMS.Forms
         {
             MoveSidePanel(buttonRegister);
             userControlDashBoard2.Visible = false;
-            //userControlAddStudent1.Visible = false;
+            userControlAddStudent1.Visible = false;
             userControlAddClass2.Visible = false;
         }
 

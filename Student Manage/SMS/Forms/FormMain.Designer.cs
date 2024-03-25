@@ -58,6 +58,7 @@
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
             this.userControlAddClass2 = new Student_Manage.SMS.FormsUseControl.UserControlAddClass();
             this.userControlDashBoard2 = new Student_Manage.SMS.FormsUseControl.UserControlDashBoard();
+            this.userControlAddStudent1 = new Student_Manage.SMS.FormsUseControl.UserControlAddStudent();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -414,12 +415,24 @@
             this.userControlDashBoard2.Size = new System.Drawing.Size(1316, 735);
             this.userControlDashBoard2.TabIndex = 2;
             // 
+            // userControlAddStudent1
+            // 
+            this.userControlAddStudent1.BackColor = System.Drawing.Color.White;
+            this.userControlAddStudent1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.userControlAddStudent1.Location = new System.Drawing.Point(265, 167);
+            this.userControlAddStudent1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlAddStudent1.Name = "userControlAddStudent1";
+            this.userControlAddStudent1.Size = new System.Drawing.Size(1296, 675);
+            this.userControlAddStudent1.TabIndex = 4;
+            this.userControlAddStudent1.Visible = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1574, 900);
+            this.Controls.Add(this.userControlAddStudent1);
             this.Controls.Add(this.userControlAddClass2);
             this.Controls.Add(this.userControlDashBoard2);
             this.Controls.Add(this.panelBack);
@@ -479,5 +492,6 @@
         
         private FormsUseControl.UserControlDashBoard userControlDashBoard2;
         private FormsUseControl.UserControlAddClass userControlAddClass2;
+        private FormsUseControl.UserControlAddStudent userControlAddStudent1;
     }
 }
